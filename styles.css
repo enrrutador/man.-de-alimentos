@@ -1,0 +1,134 @@
+:root {
+  --primary: #2c7be5;
+  --primary-dark: #1e5bb8;
+  --danger: #e74c3c;
+  --success: #27ae60;
+  --light: #f8f9fa;
+  --dark: #2c3e50;
+  --gray: #7f8c8d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+  min-height: 100vh;
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  background: var(--dark);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1.3rem;
+  border-radius: 50px;
+  background: rgba(255,255,255,0.12);
+  transition: all 0.25s ease;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+  background: var(--primary);
+  transform: translateY(-2px);
+}
+
+main {
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  border-left: 5px solid var(--primary);
+}
+
+h2 {
+  color: var(--primary-dark);
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+}
+
+h3 {
+  color: #e67e22;
+  margin: 1.5rem 0 0.8rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.card {
+  background: var(--light);
+  border-radius: 10px;
+  padding: 1.4rem;
+  border: 1px solid #dfe6e9;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.card h4 {
+  color: var(--primary);
+  margin-bottom: 0.8rem;
+}
+
+footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  header h1 { font-size: 2rem; }
+  nav ul { flex-direction: column; align-items: center; }
+  nav a { width: 90%; text-align: center; }
+}
