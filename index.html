@@ -1,290 +1,334 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Manipulación Segura de Alimentos • Todos los Módulos Completos</title>
-  <style>
-    :root {
-      --primary: #2c7be5;
-      --dark: #2c3e50;
-      --light: #f8f9fa;
-      --gray: #7f8c8d;
-    }
-    body {
-      font-family: system-ui, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: #f0f4f8;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: var(--primary);
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-      position: relative;
-    }
-    nav {
-      background: var(--dark);
-      padding: 1rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.8rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 0.6rem 1.2rem;
-      border-radius: 30px;
-      background: rgba(255,255,255,0.1);
-      transition: 0.3s;
-    }
-    nav a:hover, nav a.active {
-      background: var(--primary);
-    }
-    main {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
-    }
-    section {
-      background: white;
-      border-radius: 10px;
-      padding: 2rem;
-      margin-bottom: 2.5rem;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      border-left: 5px solid var(--primary);
-    }
-    h1, h2 {
-      color: var(--primary);
-    }
-    h3 {
-      color: #e67e22;
-      margin-top: 1.8rem;
-    }
-    .back-to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: var(--primary);
-      color: white;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 50px;
-      font-size: 1.4rem;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      z-index: 99;
-    }
-    footer {
-      background: var(--dark);
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-    }
-    @media (max-width: 768px) {
-      nav ul { flex-direction: column; align-items: center; }
-      nav a { width: 90%; text-align: center; margin: 0.3rem 0; }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description" content="Curso completo de Manipulación Segura de Alimentos - Normativa Argentina">
+  <title>Manipulación Segura de Alimentos</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-title">🍽️ Manipulación Segura</a>
+      <button class="hamburger" aria-label="Menú">☰</button>
+      <ul class="nav-menu">
+        <li><a href="#modulo1">Módulo 1</a></li>
+        <li><a href="#modulo2">Módulo 2</a></li>
+        <li><a href="#modulo3">Módulo 3</a></li>
+        <li><a href="#modulo4">Módulo 4</a></li>
+        <li><a href="#modulo5">Módulo 5</a></li>
+        <li><a href="#modulo6">Módulo 6</a></li>
+        <li><a href="#modulo7">Módulo 7</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<header>
-  <h1>Manipulación Segura de Alimentos</h1>
-  <p>Contenido COMPLETO de los 7 módulos • Curso oficial Argentina • 2026</p>
-</header>
+  <header class="hero">
+    <h1>📚 Manipulación Segura de Alimentos</h1>
+    <p>Curso completo - Normativa Argentina 2026</p>
+  </header>
 
-<nav>
-  <ul>
-    <li><a href="#modulo1">Módulo 1</a></li>
-    <li><a href="#modulo2">Módulo 2</a></li>
-    <li><a href="#modulo3">Módulo 3</a></li>
-    <li><a href="#modulo4">Módulo 4</a></li>
-    <li><a href="#modulo5">Módulo 5</a></li>
-    <li><a href="#modulo6">Módulo 6</a></li>
-    <li><a href="#modulo7">Módulo 7</a></li>
-    <li><a href="#preguntas">Preguntas Repaso</a></li>
-  </ul>
-</nav>
+  <main class="container">
+    <!-- MÓDULO 1 -->
+    <section id="modulo1" class="module">
+      <div class="module-header" onclick="toggleModule(this)">
+        <h2>📘 Módulo 1: Conceptos Generales</h2>
+        <span class="toggle">+</span>
+      </div>
+      <div class="module-content">
+        <div class="card">
+          <h3>1.1 Tipos de Alimentos (Código Alimentario Argentino)</h3>
+          
+          <div class="concept-box">
+            <h4>🔹 Alimento Genuino o Normal</h4>
+            <p>Se entiende el que, respondiendo a las especificaciones reglamentarias, no contenga sustancias no autorizadas ni agregados que configuren una adulteración y se expenda bajo la denominación y rotulados legales, sin indicaciones, signos o dibujos que puedan engañar respecto a su origen, naturaleza y calidad.</p>
+          </div>
 
-<main>
+          <div class="concept-box">
+            <h4>🔹 Alimento Alterado</h4>
+            <p>El que por causas naturales de índole física, química y/o biológica o derivadas de tratamientos tecnológicos inadecuados y/o deficientes, ha sufrido deterioro en sus características organolépticas, en su composición intrínseca y/o en su valor nutritivo.</p>
+            <p><em>Ejemplos: yogur cortado, galletitas rancias o húmedas, confites descoloridos.</em></p>
+          </div>
 
-  <section id="modulo1">
-    <h2>Módulo 1 – Conceptos generales de Manipulación de Alimentos</h2>
+          <div class="concept-box">
+            <h4>🔹 Alimento Adulterado</h4>
+            <p>El que ha sido privado de sus elementos útiles o característicos, reemplazándolos por otros inertes o extraños; adicionado de aditivos no autorizados o sometido a tratamientos para disimular u ocultar alteraciones.</p>
+            <p><em>Ejemplos: aceite de oliva mezclado con otros aceites sin declarar, leche diluida.</em></p>
+          </div>
 
-    <h3>1.1 Tipos de alimentos (definiciones, composición, alteraciones)</h3>
-    <p>Es importante introducir las definiciones básicas sobre denominaciones de alimentos descriptas en el Capítulo I, artículo 6, del Código Alimentario Argentino:</p>
+          <div class="concept-box">
+            <h4>🔹 Alimento Falsificado</h4>
+            <p>El que tenga la apariencia y caracteres generales de un producto legítimo protegido o no por marca registrada, y se denomine como éste sin serlo, o que no proceda de sus verdaderos fabricantes.</p>
+            <p><em>Ejemplos: queso azul comercializado como roquefort, café chino como colombiano.</em></p>
+          </div>
 
-    <strong>Alimento genuino o normal:</strong> Se entiende el que, respondiendo a las especificaciones reglamentarias, no contenga sustancias no autorizadas ni agregados que configuren una adulteración y se expenda bajo la denominación y rotulados legales, sin indicaciones, signos o dibujos que puedan engañar respecto a su origen, naturaleza y calidad.
+          <div class="danger-box">
+            <h4>🔹 Alimento Contaminado</h4>
+            <p>El que contenga:</p>
+            <ul>
+              <li>Agentes vivos (virus, microorganismos o parásitos riesgosos para la salud)</li>
+              <li>Sustancias químicas, minerales u orgánicas extrañas</li>
+              <li>Componentes naturales tóxicos en concentración mayor a la permitida</li>
+            </ul>
+            <p><em>Ejemplos: pan enmohecido, agua con Vibrio del cólera, salame con triquinosis.</em></p>
+          </div>
+        </div>
 
-    <strong>Alimento alterado:</strong> El que por causas naturales de índole física, química y/o biológica o derivadas de tratamientos tecnológicos inadecuados y/o deficientes, aisladas o combinadas, ha sufrido deterioro en sus características organolépticas, en su composición intrínseca y/o en su valor nutritivo. Por ejemplo: yogur cortado, galletitas rancias o húmedas, confites descoloridos, etc.
+        <div class="card">
+          <h3>🌾 Cadena Agroalimentaria</h3>
+          <p>Se entiende por cadena agroalimentaria <strong>la totalidad de las etapas de agregado de valor</strong> que sufren los alimentos desde su producción hasta que llegan al consumidor. Incluye proveedores de insumos, transporte y logística.</p>
+          <div class="highlight">
+            <p><strong>Frase tradicional:</strong> "Del campo a la mesa"</p>
+          </div>
+        </div>
 
-    <strong>Alimento adulterado:</strong> El que ha sido privado, en forma parcial o total, de sus elementos útiles o característicos, reemplazándolos o no por otros inertes o extraños; que ha sido adicionado de aditivos no autorizados o sometidos a tratamientos de cualquier naturaleza para disimular u ocultar alteraciones, deficiente calidad de materias primas o defectos de elaboración. Por ejemplo: aceite de oliva con mezcla de otros aceites más económicos (y no se declaren en el rótulo), leche diluida, etc.
+        <div class="card">
+          <h3>🛡 Seguridad Alimentaria</h3>
+          <p>Según la FAO (1996): <strong>"Seguridad alimentaria se consigue cuando las personas tienen, en todo momento, acceso físico y económico a alimentos seguros y nutritivos para satisfacer sus necesidades alimenticias y sus preferencias con el fin de llevar una vida activa y sana."</strong></p>
+          
+          <h4>Los 4 Pilares:</h4>
+          <ol>
+            <li><strong>Disponibilidad física:</strong> Que existan alimentos suficientes (producción y existencias)</li>
+            <li><strong>Acceso:</strong> Que las personas puedan adquirirlos (económico y físico)</li>
+            <li><strong>Uso:</strong> Manera como el cuerpo aprovecha los nutrientes</li>
+            <li><strong>Estabilidad:</strong> Que el acceso sea periódico, no puntual (clima, factores económicos)</li>
+          </ol>
+        </div>
 
-    <strong>Alimento falsificado:</strong> El que tenga la apariencia y caracteres generales de un producto legítimo protegido o no por marca registrada, y se denomine como éste sin serlo, o que no proceda de sus verdaderos fabricantes o zona de producción conocida y/o declarada. Ejemplo: queso azul comercializado como queso roquefort, café Chino comercializado como café de Colombia.
+        <div class="card">
+          <h3>1.2 Rol del Manipulador de Alimentos</h3>
+          <p><strong>Definición Codex Alimentarius:</strong> "Toda persona que manipule directamente alimentos envasados o no envasados, equipo y utensilios utilizados para los alimentos, o superficies que entren en contacto con los alimentos y que se espera, por tanto, cumpla con los requerimientos de higiene de los alimentos."</p>
+          
+          <div class="danger-box">
+            <p><strong>El manipulador puede ser una de las principales fuentes de contaminación</strong>, pues los seres humanos alojamos microorganismos capaces de ser transmitidos a los alimentos.</p>
+          </div>
+          
+          <p>Debe conocer:</p>
+          <ul>
+            <li>Higiene personal</li>
+            <li>Vestimenta adecuada</li>
+            <li>Estado de salud</li>
+            <li>Hábitos correctos</li>
+            <li>Prácticas para evitar deterioro y contaminación</li>
+          </ul>
+        </div>
 
-    <strong>Alimento contaminado:</strong> el que contenga:  
-    a. Agentes vivos (virus, microorganismos o parásitos riesgosos para la salud), sustancias químicas, minerales u orgánicas extrañas a su composición normal, sean o no repulsivas o tóxicas. Por ejemplo: pan enmohecido, agua con Vibrio del cólera, salame con triquinosis.  
-    b. Componentes naturales tóxicos en concentración mayor a la permitida por exigencias reglamentarias. Por ejemplo: Deoxinivalenol (DON) o vomitoxina producida por el hongo fusarium, etc.  
-    La presencia de estos peligros puede darse de forma natural o accidental, y depende del manipulador.
+        <div class="card">
+          <h3>1.3 Normativa y Actores en Argentina</h3>
+          
+          <div class="entity-box">
+            <h4>🏛 Código Alimentario Argentino (CAA)</h4>
+            <p>Reglamento técnico en permanente actualización que establece disposiciones higiénico-sanitarias, bromatológicas y de identificación comercial. Su objetivo primordial es la protección de la salud de la población.</p>
+          </div>
 
-    <h3>Cadena agroalimentaria</h3>
-    <p>Se entiende por cadena agroalimentaria la totalidad de las etapas de agregado de valor que sufren los alimentos desde su producción hasta que llegan al consumidor. Incluye proveedores de insumos, transporte y logística. Frase tradicional: “del campo a la mesa”.</p>
+          <div class="entity-box">
+            <h4>⚖️ ANMAT / INAL</h4>
+            <p>Administración Nacional de Medicamentos, Alimentos y Tecnología Médica, a través del Instituto Nacional de Alimentos.</p>
+            <p><strong>Controla:</strong> Productos envasados, suplementos dietarios, materiales en contacto con alimentos.</p>
+          </div>
 
-    <h3>Seguridad Alimentaria</h3>
-    <p>Se refiere al uso de recursos y estrategias para asegurar que los alimentos sean seguros (no transmitan enfermedades). Definición FAO 1996: acceso físico y económico permanente a alimentos seguros y nutritivos.</p>
-    <p>Cuatro pilares:</p>
-    <ol>
-      <li>Disponibilidad física</li>
-      <li>Acceso</li>
-      <li>Uso (aprovechamiento de nutrientes)</li>
-      <li>Estabilidad</li>
-    </ol>
+          <div class="entity-box">
+            <h4>🐄 SENASA</h4>
+            <p>Servicio Nacional de Sanidad y Calidad Agroalimentaria. Ejecuta políticas de sanidad animal y vegetal.</p>
+            <p><strong>Controla:</strong> Carnes, pescados, aves, huevos, vegetales frescos, refrigerados y congelados.</p>
+          </div>
 
-    <h3>1.2 Rol del manipulador de alimentos</h3>
-    <p>Definición Codex: Toda persona que manipule directamente alimentos, equipos, utensilios o superficies en contacto con alimentos y que debe cumplir normas de higiene.</p>
-    <p>Es una de las principales fuentes de contaminación por microorganismos del cuerpo humano. Debe mantener higiene personal, vestimenta adecuada, estado de salud y hábitos correctos.</p>
+          <div class="entity-box">
+            <h4>🏢 Autoridades Provinciales y CABA</h4>
+            <p>Aplican el CAA en sus jurisdicciones: registran establecimientos, habilitan productos, realizan inspecciones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <h3>1.3 Normativa y actores en Argentina</h3>
-    <p>Norma principal: Código Alimentario Argentino (CAA). Reglamento técnico con disposiciones higiénico-sanitarias, bromatológicas y de identificación comercial.</p>
-    <p>Organismos:</p>
-    <ul>
-      <li>ANMAT / INAL: productos envasados, suplementos, materiales en contacto con alimentos</li>
-      <li>SENASA: carnes, pescados, aves, huevos, vegetales frescos</li>
-      <li>Autoridades provinciales y CABA: aplicación local del CAA</li>
-    </ul>
-  </section>
+    <!-- MÓDULO 2 -->
+    <section id="modulo2" class="module">
+      <div class="module-header" onclick="toggleModule(this)">
+        <h2>📗 Módulo 2: Alimentos Seguros</h2>
+        <span class="toggle">+</span>
+      </div>
+      <div class="module-content">
+        <div class="card">
+          <h3>2.1 Concepto de Alimentos Seguros</h3>
+          <p><strong>CAA Art. 6:</strong> Alimento es toda sustancia que ingerida aporte materiales y energía para procesos biológicos.</p>
+          <p>Debe ser <strong>inocuo</strong>: libre de bacterias, virus, parásitos, sustancias químicas o físicas. La inocuidad es resultado de controles en toda la cadena: producción, almacenamiento, distribución y preparación.</p>
+        </div>
+        
+        <div class="card">
+          <h3>2.2 Peligro y Riesgo</h3>
+          <div class="grid-2">
+            <div class="grid-item"><h4>🔹 Peligro</h4><p>Agente biológico, químico o físico capaz de provocar daño.</p></div>
+            <div class="grid-item"><h4>🔹 Riesgo</h4><p>Probabilidad de daño y su gravedad.</p></div>
+          </div>
+        </div>
 
-  <section id="modulo2">
-    <h2>Módulo 2 – Alimentos seguros</h2>
+        <div class="card">
+          <h3>2.3 Clasificación de Peligros</h3>
+          <div class="grid-2">
+            <div class="grid-item"><h4>🧱 Físicos</h4><p>Vidrio, metal, plástico, pelo, objetos personales</p></div>
+            <div class="grid-item"><h4>🧪 Químicos</h4><p>Detergentes, insecticidas, plaguicidas</p></div>
+            <div class="grid-item"><h4>🦠 Biológicos</h4><p>Bacterias, virus, hongos, parásitos. Vectores: insectos, roedores</p></div>
+          </div>
+        </div>
 
-    <h3>2.1 Concepto de alimentos seguros</h3>
-    <p>Según CAA Art. 6: Alimento es toda substancia o mezcla que ingerida aporte materiales y energía para procesos biológicos, incluyendo lo consumido por hábito o costumbre.</p>
-    <p>Debe ser inocuo (libre de bacterias, virus, parásitos, químicos o físicos). La inocuidad es resultado de controles en toda la cadena.</p>
+        <div class="card">
+          <h3>2.4 Microorganismos</h3>
+          <div class="highlight"><p><strong>Las bacterias se duplican cada ≈20 minutos</strong> en condiciones óptimas.</p></div>
+          <ul><li><strong>Patógenos:</strong> causan enfermedad</li><li><strong>Deteriorantes:</strong> alteran color, sabor, textura</li></ul>
+        </div>
 
-    <h3>2.2 Peligro y riesgo</h3>
-    <p>Peligro: agente biológico, químico o físico capaz de provocar daño.</p>
-    <p>Riesgo: probabilidad y gravedad del efecto nocivo.</p>
+        <div class="card">
+          <h3>2.5 Factores de Crecimiento Microbiano</h3>
+          <ul>
+            <li><strong>Nutrientes:</strong> alimento para crecer</li>
+            <li><strong>Agua (aw):</strong> más agua = más crecimiento</li>
+            <li><strong>Oxígeno:</strong> aerobias, anaerobias, facultativas</li>
+            <li><strong>Temperatura:</strong> <span class="danger-box">Zona de peligro: 5°C a 65°C</span></li>
+            <li><strong>pH:</strong> óptimo entre 5 y 8 (neutro)</li>
+          </ul>
+        </div>
 
-    <h3>2.3 Clasificación de peligros</h3>
-    <strong>Físicos:</strong> vidrio, metal, plástico, pelo, objetos personales.  
-    <strong>Químicos:</strong> detergentes, plaguicidas, residuos.  
-    <strong>Biológicos:</strong> bacterias, virus, parásitos, hongos. Vectores: insectos, roedores.
+        <div class="card">
+          <h3>2.6 Alimentos de Alto y Bajo Riesgo</h3>
+          <div class="grid-2">
+            <div class="danger-box"><h4>🔴 Alto Riesgo</h4><p>Mucha agua, alto proteico, baja acidez. Carnes, lácteos, huevos, listos para consumir.</p></div>
+            <div class="success-box"><h4>🟢 Bajo Riesgo</h4><p>Baja aw, más ácidos. Galletitas, fideos secos, harina.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <h3>2.4 Peligros biológicos – Microorganismos</h3>
-    <p>Bacterias se duplican cada ≈20 minutos en condiciones óptimas. Clasificación: patógenos (causan enfermedad) vs deteriorantes (alteran sensorialmente).</p>
+    <!-- MÓDULO 3 -->
+    <section id="modulo3" class="module">
+      <div class="module-header" onclick="toggleModule(this)">
+        <h2>📙 Módulo 3: Cinco Claves de la Inocuidad</h2>
+        <span class="toggle">+</span>
+      </div>
+      <div class="module-content">
+        <div class="card">
+          <h3>🔑 Clave 1: Higiene</h3>
+          <div class="entity-box"><h4>Higiene Personal</h4><p>Baño diario, uñas cortas sin esmalte, no joyas, no maquillaje/perfume.</p></div>
+          <div class="entity-box"><h4>Lavado de Manos</h4><p><strong>15-20 segundos</strong> con jabón. Cuándo: inicio turno, después del baño, tocar basura, estornudar, manipular crudos.</p></div>
+          <div class="entity-box"><h4>Vestimenta</h4><p>Ropa clara, cofia/red, delantal plástico, calzado adecuado.</p></div>
+          <div class="entity-box"><h4>Estado de Salud</h4><p>No trabajar enfermo (diarrea, vómitos, heridas sin cubrir).</p></div>
+        </div>
 
-    <h3>2.5 Factores que influyen en el desarrollo microbiano</h3>
-    <ul>
-      <li>Nutrientes</li>
-      <li>Agua (aw)</li>
-      <li>Oxígeno (aerobias, anaerobias, facultativas)</li>
-      <li>Temperatura: zona peligro 5–65 °C</li>
-      <li>pH: óptimo 5–8 para la mayoría de patógenos</li>
-    </ul>
+        <div class="card">
+          <h3>🔑 Clave 2: Contaminación Cruzada</h3>
+          <ul>
+            <li><strong>Directa:</strong> crudo toca cocido</li>
+            <li><strong>Indirecta:</strong> por manos, tablas, cuchillos</li>
+          </ul>
+          <p>Prevención: tablas diferenciadas, separar crudos/cocidos, lavado frecuente.</p>
+        </div>
 
-    <h3>2.6 Alimentos de alto y bajo riesgo</h3>
-    <strong>Alto riesgo:</strong> alta aw, proteínas, baja acidez → carnes, lácteos, huevos, listos para consumir.  
-    <strong>Bajo riesgo:</strong> baja aw, ácidos → galletitas, fideos secos, harina, mermeladas.
-  </section>
+        <div class="card">
+          <h3>🔑 Clave 3: Temperaturas Seguras</h3>
+          <div class="highlight">
+            <p><strong>Refrigeración:</strong> 2-8°C | <strong>Congelación:</strong> ≤-18°C</p>
+            <p><strong>Zona de peligro:</strong> 5°C a 65°C (bacterias se multiplican)</p>
+          </div>
+          <p><strong>Almacenamiento en heladera:</strong> Carnes abajo, cocidos centro, lácteos arriba (evita goteo).</p>
+          <p><strong>Descongelado:</strong> En heladera (6-24h), agua fría (cambiar cada 30 min), microondas. <strong>NUNCA a temperatura ambiente.</strong></p>
+        </div>
 
-  <section id="modulo3">
-    <h2>Módulo 3 – Cinco claves de la inocuidad alimentaria</h2>
+        <div class="card">
+          <h3>🔑 Clave 4: Cocción Segura</h3>
+          <p>Centro del alimento <strong>≥70°C</strong>. No dejar cocidos >2 horas a temperatura ambiente. Mantener calientes >60°C.</p>
+        </div>
 
-    <h3>Clave 1: Higiene</h3>
-    <p>Higiene personal: baño diario, uñas cortas sin esmalte, no joyas, no maquillaje/perfume.</p>
-    <p>Lavado de manos: 15–20 s con jabón, entre dedos, uñas, antebrazos. Secar con papel, cerrar canilla con papel.</p>
-    <p>Cuándo lavar: inicio turno, después baño, tocar basura, estornudar, manipular crudos, etc.</p>
-    <p>Vestimenta: ropa clara, cofia/red, delantal plástico, calzado adecuado.</p>
-    <p>Estado de salud: no trabajar enfermo (diarrea, vómitos, heridas sin cubrir).</p>
-    <p>Hábitos: no fumar/comer en área de elaboración, no toser sobre alimentos.</p>
-    <p>Manejo residuos: tachos tapados, bolsas resistentes, limpiar derrames.</p>
-    <p>Limpieza y desinfección: limpieza elimina suciedad, desinfección reduce microorganismos. Usar POES.</p>
-    <p>Control de plagas: MIP (Manejo Integrado de Plagas).</p>
+        <div class="card">
+          <h3>🔑 Clave 5: Agua y Materias Primas Seguras</h3>
+          <p><strong>Agua:</strong> Debe ser potable (Art. 982 CAA). Limpiar tanques cada 6 meses.</p>
+          <p><strong>Materias primas:</strong> Proveedores habilitados, controlar fecha de vencimiento, aplicar PEPS (Primero Entra Primero Sale).</p>
+        </div>
+      </div>
+    </section>
 
-    <h3>Clave 2: Contaminación cruzada</h3>
-    <p>Directa: contacto directo crudo-cocido.</p>
-    <p>Indirecta: a través de manos, tablas, cuchillos, superficies.</p>
+    <!-- MÓDULO 4 -->
+    <section id="modulo4" class="module">
+      <div class="module-header" onclick="toggleModule(this)">
+        <h2>📕 Módulo 4: ETAs</h2>
+        <span class="toggle">+</span>
+      </div>
+      <div class="module-content">
+        <div class="card">
+          <h3>4.1 Enfermedades Transmitidas por Alimentos</h3>
+          <p>Provocadas por consumo de alimentos o agua contaminados con microorganismos, parásitos o sus toxinas.</p>
+          <p><strong>Tipos:</strong></p>
+          <ul>
+            <li><strong>Infección:</strong> microorganismos vivos (Salmonella, E. coli)</li>
+            <li><strong>Intoxicación:</strong> toxinas preformadas (botulismo, staphylococcus)</li>
+          </ul>
+          <p><strong>Grupos vulnerables:</strong> niños, ancianos, embarazadas, inmunodeprimidos.</p>
+        </div>
 
-    <h3>Clave 3: Temperaturas seguras</h3>
-    <p>Almacenamiento: PEPS (Primero Entra Primero Sale), carnes abajo, cocidos centro, lácteos arriba.</p>
-    <p>Descongelado: heladera (6–24 h), agua fría (cambiar cada 30 min), microondas + cocción inmediata. Nunca a TA.</p>
-    <p>Conservación: refrigeración 2–8 °C, congelación ≤-18 °C.</p>
+        <div class="card">
+          <h3>4.2 Principales ETAs</h3>
+          
+          <div class="danger-box">
+            <h4>🦠 Salmonelosis</h4>
+            <p><strong>Agente:</strong> Salmonella. Incubación: 6-72h. Síntomas: diarrea, dolor abdominal, fiebre.</p>
+            <p>Alimentos: huevos, carne, aves, leche sin pasteurizar. Control: cocción ≥70°C.</p>
+          </div>
 
-    <h3>Clave 4: Cocción segura</h3>
-    <p>Centro >70 °C. No dejar cocidos >2 h a TA. Mantener calientes >60 °C.</p>
+          <div class="danger-box">
+            <h4>🦠 Shigelosis</h4>
+            <p><strong>Agente:</strong> Shigella. Transmisión fecal-oral. Síntomas: diarrea con sangre, fiebre.</p>
+            <p>Control: lavado de manos, cocción adecuada.</p>
+          </div>
 
-    <h3>Clave 5: Agua y materias primas seguras</h3>
-    <p>Agua potable (Art. 982 CAA). Limpieza tanques cada 6 meses.</p>
-    <p>Rotulado: denominación, ingredientes, alérgenos, contenido neto, origen, lote, vencimiento, nutricional, frontal (octógonos si exceso).</p>
-  </section>
+          <div class="danger-box">
+            <h4>🦠 Bacillus cereus</h4>
+            <p>Tipo diarreico (6-15h) y tipo emético (0.5-6h). Alimentos: arroz, pastas. La toxina emética resiste la cocción.</p>
+          </div>
 
-  <!-- Los otros módulos siguen el mismo patrón. Como el texto es muy largo, aquí resumo los siguientes para no exceder límites de respuesta, pero en tu archivo real pegá TODO el contenido que me diste -->
+          <div class="danger-box">
+            <h4>🦠 Staphylococcus aureus</h4>
+            <p>Incubación: 1-4h. Síntomas: vómitos intensos. Fuentes: manipulador portador (piel, nariz, boca).</p>
+            <p>Alimentos: pastelería con crema, ensaladas.</p>
+          </div>
 
-  <section id="modulo4">
-    <h2>Módulo 4 – Enfermedades Transmitidas por Alimentos (ETAs)</h2>
-    <!-- Pegá aquí todo el texto completo del Módulo 4 que me pasaste: salmonelosis, shigelosis, Bacillus cereus, estafilocócica, botulismo, C. perfringens, SUH, triquinosis, E. coli, listeriosis, cólera, hepatitis A, factores y prevención -->
-    <p>[Aquí va todo el contenido detallado del Módulo 4 – copia y pega el texto original]</p>
-  </section>
+          <div class="danger-box">
+<!-- CONTINUACION MODULO 4 -->
+<div class="danger-box"><h4>ðŸ¦  Botulismo</h4><p><strong>Toxina de C. botulinum.</strong> ALTA MORTALIDAD. VisiÃ³n doble, parÃ¡lisis progresiva. Alimentos: conservas caseras.</p></div>
+<div class="danger-box"><h4>ðŸ¦  SUH (E. coli O157:H7)</h4><p>SÃ­ndrome UrÃ©mico HemolÃ­tico. Principal causa insuficiencia renal en niÃ±os en Argentina.</p></div>
+</div></div></section>
 
-  <section id="modulo5">
-    <h2>Módulo 5 – Alimentos libres de gluten</h2>
-    <!-- Pegá aquí TODO el texto del Módulo 5: definición, límite 10 mg/kg, símbolo, guía BPM, contaminación cruzada, almacenamiento, transporte, saneamiento, etc. -->
-    <p>[Aquí va todo el contenido detallado del Módulo 5]</p>
-  </section>
+<!-- MODULO 5 -->
+<section id="modulo5" class="module"><div class="module-header" onclick="toggleModule(this)"><h2>ðŸ“” MÃ³dulo 5: Alimentos Libres de Gluten</h2><span class="toggle">+</span></div>
+<div class="module-content">
+<div class="card"><h3>5.1 Enfermedad CelÃ­aca</h3><p>Intolerancia permanente al gluten (TACC: trigo, avena, cebada, centeno). Ãšnico tratamiento: dieta estricta sin gluten.</p></div>
+<div class="card"><h3>5.2 Normativa</h3><p><strong>LÃ­mite:</strong> â‰¤10 mg/kg. Simbolo oficial: cÃ­rculo con espigas tachadas + "SIN GLUTEN".</p></div>
+<div class="card"><h3>5.3 PrevenciÃ³n ContaminaciÃ³n</h3><ul><li>Sector exclusivo separado fÃ­sicamente</li><li>Equipos exclusivos</li><li>Heladera/freezer exclusivo o estante superior</li><li>Elaborar primero (inicio de jornada)</li></ul></div>
+</div></section>
 
-  <section id="modulo6">
-    <h2>Módulo 6 – Nutrición</h2>
-    <!-- Pegá aquí TODO el texto del Módulo 6: alimentación vs nutrición, nutrientes, 10 mensajes GAPA, grupos de alimentos -->
-    <p>[Aquí va todo el contenido detallado del Módulo 6]</p>
-  </section>
+<!-- MODULO 6 -->
+<section id="modulo6" class="module"><div class="module-header" onclick="toggleModule(this)"><h2>ðŸ““ MÃ³dulo 6: NutriciÃ³n</h2><span class="toggle">+</span></div>
+<div class="module-content">
+<div class="card"><h3>6.1 Definiciones</h3><p><strong>AlimentaciÃ³n:</strong> proceso consciente de ingerir. <strong>NutriciÃ³n:</strong> proceso involuntario de absorciÃ³n.</p></div>
+<div class="card"><h3>6.2 Nutrientes</h3><ul><li>Hidratos de carbono (energÃ­a)</li><li>ProteÃ­nas (tejidos)</li><li>Grasas (saturadas, mono, poli, trans)</li><li>Vitaminas (hidro/liposolubles)</li><li>Sales minerales</li><li>Agua (~2L/dÃ­a)</li></ul></div>
+<div class="card"><h3>6.3 GAPA - 10 Mensajes</h3><ol><li>4 comidas + 30 min actividad</li><li>8 vasos de agua</li><li>5 porciones frutas/verduras</li><li>Reducir sal</li><li>Limitar azÃºcar, grasas, sal</li><li>3 porciones lÃ¡cteos</li><li>Pescado 2x/semana, huevo 1/dÃ­a</li><li>Legumbres y cereales integrales</li><li>Aceite crudo + frutos secos</li><li>Alcohol responsable</li></ol></div>
+</div></section>
 
-  <section id="modulo7">
-    <h2>Módulo 7 – Sistemas de gestión de inocuidad</h2>
-    <!-- Pegá aquí TODO el texto del Módulo 7: BPA, BPP, BPM, POES, MIP, HACCP (12 pasos), auditorías -->
-    <p>[Aquí va todo el contenido detallado del Módulo 7]</p>
-  </section>
-
-  <section id="preguntas">
-    <h2>Preguntas de repaso</h2>
-    <!-- Pegá aquí todas las preguntas que me hiciste con respuestas -->
-    <p>1. Las bacterias pueden duplicarse cada ≈20 minutos en condiciones óptimas → Verdadero</p>
-    <p>2. Alimento que contiene agentes vivos o sustancias extrañas → Contaminado</p>
-    <!-- ... y todas las demás -->
-  </section>
+<!-- MODULO 7 -->
+<section id="modulo7" class="module"><div class="module-header" onclick="toggleModule(this)"><h2>ðŸ“’ MÃ³dulo 7: Sistemas de GestiÃ³n</h2><span class="toggle">+</span></div>
+<div class="module-content">
+<div class="card"><h3>7.1 Sistemas</h3><p><strong>BPM:</strong> Buenas PrÃ¡cticas de Manufactura (obligatorias). <strong>POES:</strong> Procedimientos de Saneamiento. <strong>MIP:</strong> Manejo Integrado de Plagas.</p></div>
+<div class="card"><h3>7.2 HACCP</h3><p>Sistema de AnÃ¡lisis de Peligros y Puntos CrÃ­ticos de Control. <strong>7 Principios:</strong></p>
+<ol><li>AnÃ¡lisis de peligros</li><li>Determinar PCC (Puntos CrÃ­ticos de Control)</li><li>LÃ­mites crÃ­ticos</li><li>Monitoreo</li><li>Acciones correctivas</li><li>VerificaciÃ³n</li><li>DocumentaciÃ³n</li></ol>
+<p>Obligatorio para: leches en polvo para lactantes, alimentos para propÃ³sitos mÃ©dicos especÃ­ficos, carnes (SENASA).</p>
+</div>
+</div></section>
 
 </main>
 
-<div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</div>
-
 <footer>
-  <p>Contenido completo basado en los módulos que compartiste • Preparado para examen • Febrero 2026</p>
+  <p>Curso de ManipulaciÃ³n Segura de Alimentos - Argentina 2026</p>
+  <p>Todos los derechos reservados</p>
 </footer>
 
-<script>
-  // Resaltar menú activo (opcional)
-  document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', function() {
-      document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
-      this.classList.add('active');
-    });
-  });
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>

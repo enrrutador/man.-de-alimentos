@@ -1,21 +1,30 @@
-// Resaltar el link activo según la sección visible
-const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll("nav a");
+// === Manipulación Segura de Alimentos - JavaScript ===
 
-window.addEventListener("scroll", () => {
-  let current = "";
-
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 150;
-    if (scrollY >= sectionTop) {
-      current = section.getAttribute("id");
-    }
+document.addEventListener('DOMContentLoaded', function() {
+  // Mobile menu toggle
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+  
+  hamburger?.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
   });
-
-  navLinks.forEach(link => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === "#" + current) {
-      link.classList.add("active");
-    }
+  
+  // Smooth scroll for nav links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      navMenu?.classList.remove('active');
+    });
   });
 });
+
+// Toggle module accordion
+function toggleModule(header) {
+  const content = header.nextElementSibling;
+  const toggle = header.querySelector('.toggle');
+  
+  content.classList.toggle('active');
+  toggle.textContent = content.classList.contains('active') ? '−' : '+';
+}
