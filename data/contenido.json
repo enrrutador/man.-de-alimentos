@@ -1,0 +1,209 @@
+{
+  "curso": {
+    "titulo": "Manual de Manipulación de Alimentos",
+    "subtitulo": "Curso de Certificación Profesional",
+    "descripcion": "Aprende las mejores prácticas para la manipulación segura de alimentos y obtén tu certificación oficial.",
+    "duracion": "8 horas",
+    "nivel": "Básico a Intermedio",
+    "certificacion": true,
+    "modulos": [
+      {
+        "id": "modulo-1-fundamentos",
+        "numero": 1,
+        "titulo": "Fundamentos de Manipulación de Alimentos",
+        "descripcion": "Conceptos básicos, importancia de la manipulación segura y marco normativo.",
+        "icono": "📋",
+        "duracion": "90 minutos",
+        "lecciones": [
+          {
+            "id": "leccion-1-1",
+            "titulo": "Introducción a la Manipulación de Alimentos",
+            "orden": 1
+          },
+          {
+            "id": "leccion-1-2", 
+            "titulo": "Marco Legal y Normativo",
+            "orden": 2
+          },
+          {
+            "id": "leccion-1-3",
+            "titulo": "Responsabilidades del Manipulador",
+            "orden": 3
+          },
+          {
+            "id": "leccion-1-4",
+            "titulo": "Riesgos en la Manipulación de Alimentos",
+            "orden": 4
+          }
+        ]
+      },
+      {
+        "id": "modulo-2-nutricion",
+        "numero": 2,
+        "titulo": "Nutrición y Propiedades de los Alimentos",
+        "descripcion": "Composición nutricional, grupos de alimentos y su importancia en la salud.",
+        "icono": "🥗",
+        "duracion": "90 minutos",
+        "lecciones": [
+          {
+            "id": "leccion-2-1",
+            "titulo": "Grupos de Alimentos y Pirámide Nutricional",
+            "orden": 1
+          },
+          {
+            "id": "leccion-2-2",
+            "titulo": "Contaminación Microbiológica",
+            "orden": 2
+          },
+          {
+            "id": "leccion-2-3",
+            "titulo": "Alteración y Deterioro de Alimentos",
+            "orden": 3
+          },
+          {
+            "id": "leccion-2-4",
+            "titulo": "Alergias e Intolerancias Alimentarias",
+            "orden": 4
+          },
+          {
+            "id": "leccion-2-5",
+            "titulo": "Valor Nutricional y Etiquetado",
+            "orden": 5
+          }
+        ]
+      },
+      {
+        "id": "modulo-3-higiene",
+        "numero": 3,
+        "titulo": "Higiene Personal e Instalaciones",
+        "descripcion": "Prácticas de higiene personal, instalaciones y equipamiento adecuado.",
+        "icono": "🧼",
+        "duracion": "120 minutos",
+        "lecciones": [
+          {
+            "id": "leccion-3-1",
+            "titulo": "Higiene Personal del Manipulador",
+            "orden": 1
+          },
+          {
+            "id": "leccion-3-2",
+            "titulo": "Vestimenta y Equipo de Protección",
+            "orden": 2
+          },
+          {
+            "id": "leccion-3-3",
+            "titulo": "Instalaciones y Superficies",
+            "orden": 3
+          },
+          {
+            "id": "leccion-3-4",
+            "titulo": "Control de Plagas",
+            "orden": 4
+          }
+        ]
+      },
+      {
+        "id": "modulo-4-conservacion",
+        "numero": 4,
+        "titulo": "Conservación y Procesamiento",
+        "descripcion": "Métodos de conservación, control de temperatura y trazabilidad.",
+        "icono": "❄️",
+        "duracion": "120 minutos",
+        "lecciones": [
+          {
+            "id": "leccion-4-1",
+            "titulo": "Control de Temperaturas",
+            "orden": 1
+          },
+          {
+            "id": "leccion-4-2",
+            "titulo": "Conservación por Frío y Congelación",
+            "orden": 2
+          },
+          {
+            "id": "leccion-4-3",
+            "titulo": "Cocción y Recalentamiento",
+            "orden": 3
+          },
+          {
+            "id": "leccion-4-4",
+            "titulo": "Trazabilidad y Documentación",
+            "orden": 4
+          },
+          {
+            "id": "leccion-4-5",
+            "titulo": "Gestión de Residuos",
+            "orden": 5
+          }
+        ]
+      },
+      {
+        "id": "modulo-5-etiquetado",
+        "numero": 5,
+        "titulo": "Etiquetado y Presentación",
+        "descripcion": "Información al consumidor, etiquetado nutricional y requisitos legales.",
+        "icono": "🏷️",
+        "duracion": "60 minutos",
+        "lecciones": [
+          {
+            "id": "leccion-5-1",
+            "titulo": "Información Obligatoria en Etiquetas",
+            "orden": 1
+          },
+          {
+            "id": "leccion-5-2",
+            "titulo": "Fecha de Durabilidad y Consumo",
+            "orden": 2
+          },
+          {
+            "id": "leccion-5-3",
+            "titulo": "Presentación y Embalaje",
+            "orden": 3
+          }
+        ]
+      }
+    ],
+    "preguntas_comunes": [
+      {
+        "id": "pregunta-1",
+        "moduloId": "modulo-1-fundamentos",
+        "pregunta": "¿Cuál es la temperatura de peligro para los alimentos?",
+        "opciones": ["0°C - 4°C", "4°C - 60°C", "60°C - 80°C", "80°C - 100°C"],
+        "respuestaCorrecta": 1,
+        "explicacion": "La zona de peligro o temperatura de riesgo se encuentra entre 4°C y 60°C, donde las bacterias se multiplican rápidamente."
+      },
+      {
+        "id": "pregunta-2",
+        "moduloId": "modulo-1-fundamentos",
+        "pregunta": "¿Qué organismo regula la manipulación de alimentos en Argentina?",
+        "opciones": [["ANMAT", "SENASA", "INPI", "INTI"]],
+        "respuestaCorrecta": 0,
+        "explicacion": "La ANMAT (Administración Nacional de Medicamentos, Alimentos y Tecnología Médica) es la autoridad de aplicación en Argentina."
+      },
+      {
+        "id": "pregunta-3",
+        "moduloId": "modulo-2-nutricion",
+        "pregunta": "¿Cuál es el principal agente causante de intoxicación alimentaria?",
+        "opciones": ["Virus", "Hongos", "Bacterias", "Parásitos"],
+        "respuestaCorrecta": 2,
+        "explicacion": "Las bacterias son las principales causantes de intoxicaciones alimentarias, destacando Salmonella, E. coli y Staphylococcus aureus."
+      },
+      {
+        "id": "pregunta-4",
+        "moduloId": "modulo-3-higiene",
+        "pregunta": "¿Cuántos segundos se debe lavar las manos?",
+        "opciones": ["10 segundos", "20 segundos", "30 segundos", "60 segundos"],
+        "respuestaCorrecta": 1,
+        "explicacion": "El lavado de man debe durar al menos 20 segundos con agua y jabón para ser efectivo."
+      },
+      {
+        "id": "pregunta-5",
+        "moduloId": "modulo-4-conservacion",
+        "pregunta": "¿A qué temperatura debe mantenerse la cadena de frío?",
+        "opciones": ["0°C", "Menor a 4°C", "10°C", "15°C"],
+        "respuestaCorrecta": 1,
+        "explicacion": "La cadena de frío debe mantenerse por debajo de 4°C para preservar la calidad e inocuidad de los alimentos."
+      }
+    ]
+  }
+}
