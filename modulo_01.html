@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 1 - Conceptos Generales | Curso de Manipulación</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;color:#333;background:#f5f5f5}
+        .container{display:flex;min-height:100vh}
+        .sidebar{width:260px;background:#1e293b;color:#fff;padding:1.5rem;position:fixed;height:100vh;overflow-y:auto}
+        .sidebar h1{font-size:1rem;margin-bottom:.5rem;color:#60a5fa}
+        .sidebar p{font-size:.8rem;color:#94a3b8;margin-bottom:1.5rem}
+        .nav-label{font-size:.65rem;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin:1rem 0 .5rem}
+        .nav-list{list-style:none}
+        .nav-list li{margin:.3rem 0}
+        .nav-list a{display:block;padding:.6rem .8rem;border-radius:.4rem;color:#cbd5e1;text-decoration:none;font-size:.85rem;transition:.2s}
+        .nav-list a:hover{background:#334155}
+        .nav-list a.active{background:#3b82f6;color:#fff}
+        .nav-list .icon{display:inline-block;width:1.5rem}
+        .main{margin-left:260px;flex:1;padding:2rem;max-width:800px}
+        .hero{background:linear-gradient(135deg,#3b82f6,#8b5cf6);color:#fff;padding:2rem;border-radius:1rem;margin-bottom:1.5rem}
+        .hero small{display:block;opacity:.8;text-transform:uppercase;letter-spacing:1px;margin-bottom:.5rem}
+        .hero h1{font-size:1.8rem}
+        .card{background:#fff;padding:1.5rem;border-radius:.8rem;margin-bottom:1rem;box-shadow:0 2px 4px rgba(0,0,0,.05)}
+        .card h2{color:#3b82f6;font-size:1.3rem;margin-bottom:1rem}
+        .card h3{font-size:1.1rem;margin:1rem 0 .5rem}
+        .card p{margin-bottom:1rem}
+        .card ul{margin-left:1.5rem}
+        .card li{margin-bottom:.5rem}
+        .highlight{background:#e0e7ff;border-left:4px solid #3b82f6;padding:1rem;margin:1rem 0;border-radius:0 .5rem .5rem 0}
+        .highlight strong{color:#1e40af}
+        .nav-footer{display:flex;justify-content:space-between;margin-top:2rem;padding-top:1rem;border-top:1px solid #ddd}
+        .nav-footer a{padding:.6rem 1.2rem;background:#3b82f6;color:#fff;text-decoration:none;border-radius:.4rem}
+        .nav-footer a:hover{opacity:.9}
+        .nav-footer .disabled{background:#ccc;pointer-events:none}
+        @media(max-width:700px){.sidebar{display:none}.main{margin-left:0}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>📚 Manipulación de Alimentos</h1>
+            <p>Curso oficial Argentina</p>
+            <div class="nav-label">Módulos</div>
+            <ul class="nav-list">
+                <li><a href="modulo_01.html" class="active"><span class="icon">📘</span> 1. Conceptos</a></li>
+                <li><a href="modulo_02.html"><span class="icon">🛡️</span> 2. Alimentos Seguros</a></li>
+                <li><a href="modulo_03.html"><span class="icon">🔑</span> 3. Cinco Claves</a></li>
+                <li><a href="modulo_04.html"><span class="icon">🦠</span> 4. Enfermedades</a></li>
+                <li><a href="modulo_05.html"><span class="icon">🌾</span> 5. Libre Gluten</a></li>
+                <li><a href="modulo_06.html"><span class="icon">🥗</span> 6. Nutrición</a></li>
+                <li><a href="modulo_07.html"><span class="icon">📋</span> 7. Gestión</a></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="hero">
+                <small>Módulo 1</small>
+                <h1>Conceptos Generales de Manipulación de Alimentos</h1>
+            </div>
+            
+            <div class="card">
+                <h2>📖 Tipos de Alimentos</h2>
+                <p>Según el Código Alimentario Argentino (CAA), los alimentos se clasifican según su estado y condición:</p>
+                
+                <div class="highlight">
+                    <strong>✓ Alimento Genuino</strong><br>
+                    Cumple especificaciones reglamentarias, sin sustancias no autorizadas, correctamente rotulado.
+                </div>
+                
+                <div class="highlight">
+                    <strong>⚠️ Alimento Alterado</strong><br>
+                    Deteriorado por causas físicas, químicas o biológicas. Ejemplos: yogur cortado, galletitas rancias.
+                </div>
+                
+                <div class="highlight">
+                    <strong>🚫 Alimento Adulterado</strong><br>
+                    Se le quitaron o agregaron componentes indebidos. Ejemplos: aceite mezclado, leche diluida.
+                </div>
+                
+                <div class="highlight">
+                    <strong>❌ Alimento Falsificado</strong><br>
+                    Se hace pasar por otro producto. Ejemplos: queso azul como roquefort, café chino como colombiano.
+                </div>
+                
+                <div class="highlight">
+                    <strong>☣️ Alimento Contaminado</strong><br>
+                    Contiene agentes vivos (bacterias, virus, parásitos) o sustancias tóxicas que pueden causar enfermedad.
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>🔗 Cadena Agroalimentaria</h2>
+                <p>Todas las etapas de agregado de valor desde la producción hasta el consumidor.</p>
+                <ul>
+                    <li>Proveedores de insumos y servicios</li>
+                    <li>Transporte y logística</li>
+                    <li>"Del campo a la mesa"</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>🛡️ Seguridad Alimentaria (FAO)</h2>
+                <p>Las personas tienen acceso en todo momento a alimentos seguros y nutritivos para una vida activa y sana.</p>
+                <h3>4 Dimensiones:</h3>
+                <ul>
+                    <li><strong>Disponibilidad</strong> física de alimentos</li>
+                    <li><strong>Acceso</strong> económico y físico</li>
+                    <li><strong>Uso</strong> apropiado de nutrientes</li>
+                    <li><strong>Estabilidad</strong> del acceso en el tiempo</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>👤 Rol del Manipulador</h2>
+                <p><strong>Definición:</strong> Toda persona que manipule directamente alimentos, equipos o superficies en contacto con alimentos.</p>
+                <h3>Importancia:</h3>
+                <ul>
+                    <li>El cuerpo humano aloja microorganismos capaces de transmitirse a los alimentos</li>
+                    <li>Puede ser fuente principal de contaminación</li>
+                    <li>Debe mantener higiene personal, vestimenta adecuada y hábitos correctos</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>⚖️ Normativa Argentina</h2>
+                <h3>Código Alimentario Argentino (CAA)</h3>
+                <p>Reglamento técnico con disposiciones higiénico-sanitarias, bromatológicas y de identificación comercial.</p>
+                
+                <h3>Organismos de Control:</h3>
+                <ul>
+                    <li><strong>ANMAT:</strong> Productos envasados, suplementos, materiales en contacto con alimentos</li>
+                    <li><strong>SENASA:</strong> Carnes, pescados, aves, huevos, vegetales frescos</li>
+                    <li><strong>Autoridades provinciales:</strong> Control local de expendio</li>
+                </ul>
+            </div>
+            
+            <div class="nav-footer">
+                <span></span>
+                <a href="modulo_02.html">Módulo 2 →</a>
