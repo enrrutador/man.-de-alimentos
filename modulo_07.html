@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 7 - Sistemas de Gestión | Curso de Manipulación</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;color:#333;background:#f5f5f5}
+        .container{display:flex;min-height:100vh}
+        .sidebar{width:260px;background:#1e293b;color:#fff;padding:1.5rem;position:fixed;height:100vh;overflow-y:auto}
+        .sidebar h1{font-size:1rem;margin-bottom:.5rem;color:#60a5fa}
+        .sidebar p{font-size:.8rem;color:#94a3b8;margin-bottom:1.5rem}
+        .nav-list{list-style:none}
+        .nav-list li{margin:.3rem 0}
+        .nav-list a{display:block;padding:.6rem .8rem;border-radius:.4rem;color:#cbd5e1;text-decoration:none;font-size:.85rem;transition:.2s}
+        .nav-list a:hover{background:#334155}
+        .nav-list a.active{background:#64748b;color:#fff}
+        .main{margin-left:260px;flex:1;padding:2rem;max-width:800px}
+        .hero{background:linear-gradient(135deg,#64748b,#475569);color:#fff;padding:2rem;border-radius:1rem;margin-bottom:1.5rem}
+        .hero small{display:block;opacity:.8;text-transform:uppercase;letter-spacing:1px;margin-bottom:.5rem}
+        .hero h1{font-size:1.8rem}
+        .card{background:#fff;padding:1.5rem;border-radius:.8rem;margin-bottom:1rem;box-shadow:0 2px 4px rgba(0,0,0,.05)}
+        .card h2{color:#475569;font-size:1.3rem;margin-bottom:1rem}
+        .card h3{font-size:1.1rem;margin:1rem 0 .5rem;color:#334155}
+        .card ul{margin-left:1.5rem;margin-bottom:1rem}
+        .card li{margin-bottom:.5rem}
+        .highlight{background:#f1f5f9;border-left:4px solid #64748b;padding:1rem;margin:1rem 0;border-radius:0 .5rem .5rem 0}
+        .nav-footer{display:flex;justify-content:space-between;margin-top:2rem;padding-top:1rem;border-top:1px solid #ddd}
+        .nav-footer a{padding:.6rem 1.2rem;background:#64748b;color:#fff;text-decoration:none;border-radius:.4rem}
+        @media(max-width:700px){.sidebar{display:none}.main{margin-left:0}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>📚 Manipulación de Alimentos</h1>
+            <p>Curso oficial Argentina</p>
+            <ul class="nav-list">
+                <li><a href="modulo_01.html">📘 1. Conceptos</a></li>
+                <li><a href="modulo_02.html">🛡️ 2. Alimentos</a></li>
+                <li><a href="modulo_03.html">🔑 3. Cinco Claves</a></li>
+                <li><a href="modulo_04.html">🦠 4. Enfermedades</a></li>
+                <li><a href="modulo_05.html">🌾 5. Gluten</a></li>
+                <li><a href="modulo_06.html">🥗 6. Nutrición</a></li>
+                <li><a href="modulo_07.html" class="active">📋 7. Gestión</a></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="hero">
+                <small>Módulo 7</small>
+                <h1>Sistemas de Gestión de Inocuidad</h1>
+            </div>
+            
+            <div class="card">
+                <h2>📋 Requisitos Establecimientos</h2>
+                <h3>Estructurales</h3>
+                <ul>
+                    <li>Paredes, pisos y techos lavables</li>
+                    <li>Instalación eléctrica adecuada</li>
+                    <li>Iluminación y ventilación</li>
+                    <li>Control de plagas</li>
+                    <li>Almacenamiento separado</li>
+                </ul>
+                <h3>Operacionales</h3>
+                <ul>
+                    <li>Personal entrenado</li>
+                    <li>Procedimientos documentados</li>
+                    <li>Registros de control</li>
+                    <li>Programa de saneamiento</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>✅ BPM - Buenas Prácticas de Manufactura</h2>
+                <div class="highlight">
+                    Conjunto de procedimientos que garantizan inocuidad:
+                    <ul>
+                        <li>Higiene personal</li>
+                        <li>Limpieza y desinfección</li>
+                        <li>Control de plagas</li>
+                        <li>Almacenamiento correcto</li>
+                        <li>Manipulación adecuada</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>🎯 HACCP - Análisis de Peligros y Puntos Críticos</h2>
+                <p>Sistema preventivo de inocuidad alimentaria</p>
+                <h3>7 Principios:</h3>
+                <ol>
+                    <li><strong>Análisis de peligros:</strong> Identificar qué puede causar daño</li>
+                    <li><strong>Puntos de control crítico (PCC):</strong> Dónde se puede controlar el peligro</li>
+                    <li><strong>Límites críticos:</strong> Valores mínimos y máximos permitidos</li>
+                    <li><strong>Monitoreo:</strong> Controlar el PCC</li>
+                    <li><strong>Acciones correctivas:</strong> Qué hacer si falla el control</li>
+                    <li><strong>Verificación:</strong> Comprobar que funciona</li>
+                    <li><strong>Documentación:</strong> Registrar todo</li>
+                </ol>
+                <div class="highlight">
+                    <strong>Ejemplos de PCC:</strong>
+                    <ul>
+                        <li>Temperatura de refrigeración</li>
+                        <li>Temperatura de cocción</li>
+                        <li>Concentración de desinfectantes</li>
+                        <li>Tiempo de exposición a temperatura</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>📊 Auditorías</h2>
+                <p>Verificación del sistema de inocuidad</p>
+                <h3>Tipos:</h3>
+                <ul>
+                    <li><strong>Internas:</strong> Realizadas por la propia empresa</li>
+                    <li><strong>Externas:</strong> Realizadas por auditores independientes</li>
+                    <li><strong>De tercera parte:</strong> Certificación</li>
+                </ul>
+                <p><strong>Objetivo:</strong> Identificar desviaciones y oportunidades de mejora</p>
+            </div>
+            
+            <div class="card">
+                <h2>📚 Documentación Requerida</h2>
+                <ul>
+                    <li>Manuales de procedimientos</li>
+                    <li>Plan de saneamiento</li>
+                    <li>Registros de temperatura</li>
+                    <li>Controles de limpieza</li>
+                    <li>Capacitaciones</li>
+                    <li>Auditorías</li>
+                </ul>
+            </div>
+            
+            <div class="nav-footer">
+                <a href="modulo_06.html">← Módulo 6</a>
+                <span></span>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
