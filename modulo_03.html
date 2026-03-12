@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 3 - Cinco Claves | Curso de Manipulación</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;color:#333;background:#f5f5f5}
+        .container{display:flex;min-height:100vh}
+        .sidebar{width:260px;background:#1e293b;color:#fff;padding:1.5rem;position:fixed;height:100vh;overflow-y:auto}
+        .sidebar h1{font-size:1rem;margin-bottom:.5rem;color:#60a5fa}
+        .sidebar p{font-size:.8rem;color:#94a3b8;margin-bottom:1.5rem}
+        .nav-label{font-size:.65rem;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin:1rem 0 .5rem}
+        .nav-list{list-style:none}
+        .nav-list li{margin:.3rem 0}
+        .nav-list a{display:block;padding:.6rem .8rem;border-radius:.4rem;color:#cbd5e1;text-decoration:none;font-size:.85rem;transition:.2s}
+        .nav-list a:hover{background:#334155}
+        .nav-list a.active{background:#3b82f6;color:#fff}
+        .nav-list .icon{display:inline-block;width:1.5rem}
+        .main{margin-left:260px;flex:1;padding:2rem;max-width:800px}
+        .hero{background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;padding:2rem;border-radius:1rem;margin-bottom:1.5rem}
+        .hero small{display:block;opacity:.8;text-transform:uppercase;letter-spacing:1px;margin-bottom:.5rem}
+        .hero h1{font-size:1.8rem}
+        .card{background:#fff;padding:1.5rem;border-radius:.8rem;margin-bottom:1rem;box-shadow:0 2px 4px rgba(0,0,0,.05)}
+        .card h2{color:#d97706;font-size:1.3rem;margin-bottom:1rem}
+        .card h3{font-size:1.1rem;margin:1rem 0 .5rem;color:#dc2626}
+        .card p{margin-bottom:1rem}
+        .card ul{margin-left:1.5rem;margin-bottom:1rem}
+        .card li{margin-bottom:.5rem}
+        .highlight{background:#fef3c7;border-left:4px solid #f59e0b;padding:1rem;margin:1rem 0;border-radius:0 .5rem .5rem 0}
+        .nav-footer{display:flex;justify-content:space-between;margin-top:2rem;padding-top:1rem;border-top:1px solid #ddd}
+        .nav-footer a{padding:.6rem 1.2rem;background:#3b82f6;color:#fff;text-decoration:none;border-radius:.4rem}
+        @media(max-width:700px){.sidebar{display:none}.main{margin-left:0}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>📚 Manipulación de Alimentos</h1>
+            <p>Curso oficial Argentina</p>
+            <div class="nav-label">Módulos</div>
+            <ul class="nav-list">
+                <li><a href="modulo_01.html"><span class="icon">📘</span> 1. Conceptos</a></li>
+                <li><a href="modulo_02.html"><span class="icon">🛡️</span> 2. Alimentos Seguros</a></li>
+                <li><a href="modulo_03.html" class="active"><span class="icon">🔑</span> 3. Cinco Claves</a></li>
+                <li><a href="modulo_04.html"><span class="icon">🦠</span> 4. Enfermedades</a></li>
+                <li><a href="modulo_05.html"><span class="icon">🌾</span> 5. Libre Gluten</a></li>
+                <li><a href="modulo_06.html"><span class="icon">🥗</span> 6. Nutrición</a></li>
+                <li><a href="modulo_07.html"><span class="icon">📋</span> 7. Gestión</a></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="hero">
+                <small>Módulo 3</small>
+                <h1>Cinco Claves de la Inocuidad Alimentaria</h1>
+            </div>
+            
+            <div class="card">
+                <h2>🔄 Clave 1: Salud del Manipulador</h2>
+                <ul>
+                    <li>No trabajar enfermo (diarrea, vómitos, fiebre herida infectada)</li>
+                    <li>Informar al supervisor sobre enfermedades</li>
+                    <li>Heridas deben estar tapadas con vendas impermeables</li>
+                    <li>Visitas médicas periódicas</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>🧼 Clave 2: Higiene Personal</h2>
+                <h3>Lavado de Manos</h3>
+                <ul>
+                    <li>Al iniciar la jornada</li>
+                    <li>Después de ir al baño</li>
+                    <li>Después de tocar basura</li>
+                    <li>Después de estornudar o toser</li>
+                    <li>Después de manipular dinero</li>
+                    <li>Antes y después de manipular alimentos</li>
+                </ul>
+                <div class="highlight">
+                    <strong>Técnica:</strong> Agua + jabón + fricción por 20 segundos + enjuague + secado con papel
+                </div>
+                <h3>Hábitos</h3>
+                <ul>
+                    <li>No fumar, comer ni mascar chicle en área de elaboración</li>
+                    <li>No toser ni estornudar sobre alimentos</li>
+                    <li>Uñas cortas y limpias</li>
+                    <li>Ropa de trabajo limpia</li>
+                    <li>Uso de cofia o red para el pelo</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>🧽 Clave 3: Limpieza e Higiene</h2>
+                <h3>POES - Procedimiento Operacional Estandarizado de Saneamiento</h3>
+                <ul>
+                    <li>Preparar solución desinfectante a la concentración adecuada</li>
+                    <li>Limpieza con detergente</li>
+                    <li>Enjuague con agua</li>
+                    <li>Desinfección</li>
+                    <li>Enjuague final (si es necesario)</li>
+                    <li>Secado</li>
+                </ul>
+                <h3>Áreas de Limpieza</h3>
+                <ul>
+                    <li>Pisos, paredes, techos</li>
+                    <li>Equipos y utensilios</li>
+                    <li>Baños (limpieza frecuente)</li>
+                    <li>Ventilación</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>🌡️ Clave 4: Temperatura y Cocción</h2>
+                <h3>Temperatura</h3>
+                <ul>
+                    <li><strong>Fríos:</strong> Menos de 5°C</li>
+                    <li><strong>Calientes:</strong> Más de 65°C</li>
+                    <li><strong>Zona peligrosa:</strong> 5°C - 65°C (evitar)</li>
+                </ul>
+                <h3>Cocción</h3>
+                <ul>
+                    <li>Temperatura interna del alimento por encima de los 80°C</li>
+                    <li>Jugos claros en carnes</li>
+                    <li>Verduras blandas pero no deshechas</li>
+                </ul>
+                <h3>Descongelación</h3>
+                <ul>
+                    <li>En heladera (más seguro, planificar con anticipación)</li>
+                    <li>En microondas (usar función descongelar)</li>
+                    <li><strong>NUNCA</strong> a temperatura ambiente</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>📦 Clave 5: Almacenamiento</h2>
+                <h3>Recepción</h3>
+                <ul>
+                    <li>Verificar temperatura de transporte</li>
+                    <li>Revisar fechas de vencimiento</li>
+                    <li>Verificar estado de empaques</li>
+                    <li>Rechazar productos en mal estado</li>
+                </ul>
+                <h3>Almacenamiento</h3>
+                <ul>
+                    <li>Primeras entradas, primeras salidas (PEPS)</li>
+                    <li>Productos perecederos: refrigeración/congelación</li>
+                    <li>Separar crudos de cocidos</li>
+                    <li>Congelados: -18°C</li>
+                    <li>Refrigerados: 0-5°C</li>
+                </
