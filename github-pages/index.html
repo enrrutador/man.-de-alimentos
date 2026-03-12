@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Manipulación Segura de Alimentos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #8b5cf6 50%, #a855f7 75%, #d946ef 100%);
+            min-height: 100vh;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: move 20s linear infinite;
+            z-index: 0;
+        }
+
+        @keyframes move {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+        }
+
+        .hero-icon {
+            font-size: 6rem;
+            margin-bottom: 1rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            background: linear-gradient(to right, #fff, #e0e7ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            opacity: 0.95;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+            width: 100%;
+            max-width: 1400px;
+            padding: 0 1rem;
+        }
+
+        .module-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 2rem;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .module-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .module-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.2);
+        }
+
+        .module-card h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .module-card p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        .module-card .badge {
+            margin-top: 1rem;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            background: rgba(255,255,255,0.2);
+        }
+
+        .start-btn {
+            margin-top: 3rem;
+            padding: 1rem 3rem;
+            background: #fff;
+            color: #764ba2;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .start-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .modules-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-icon {
+                font-size: 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-icon">🍽️</div>
+            <h1>Curso de Manipulación Segura de Alimentos</h1>
+            <p>Aprende los conceptos esenciales para garantizar la inocuidad alimentaria, proteger la salud de los consumidores y cumplir con la normativa vigente en Argentina. Certificación oficial basada en el Código Alimentario Argentino.</p>
+            
+            <a href="modulo_01.html" class="start-btn">
+                <i class="fas fa-rocket"></i> Comenzar el Curso
+            </a>
+        </div>
+
+        <div class="modules-grid">
+            <a href="modulo_01.html" class="module-card">
+                <div class="icon" style="background: rgba(59, 130, 246, 0.3);">📚</div>
+                <h3>Módulo 1</h3>
+                <p>Conceptos Generales</p>
+                <span class="badge" style="background: #3b82f6;">Azul</span>
+            </a>
+            <a href="modulo_02.html" class="module-card">
+                <div class="icon" style="background: rgba(16, 185, 129, 0.3);">🛡️</div>
+                <h3>Módulo 2</h3>
+                <p>Alimentos Seguros</p>
+                <span class="badge" style="background: #10b981;">Verde</span>
+            </a>
+            <a href="modulo_03.html" class="module-card">
+                <div class="icon" style="background: rgba(245, 158, 11, 0.3);">🔑</div>
+                <h3>Módulo 3</h3>
+                <p>5 Claves de la Inocuidad</p>
+                <span class="badge" style="background: #f59e0b;">Ámbar</span>
+            </a>
+            <a href="modulo_04.html" class="module-card">
+                <div class="icon" style="background: rgba(239, 68, 68, 0.3);">⚠️</div>
+                <h3>Módulo 4</h3>
+                <p>Enfermedades Transmitidas</p>
+                <span class="badge" style="background: #ef4444;">Rojo</span>
+            </a>
+            <a href="modulo_05.html" class="module-card">
+                <div class="icon" style="background: rgba(34, 197, 94, 0.3);">🌾</div>
+                <h3>Módulo 5</h3>
+                <p>Alimentos Libre de
