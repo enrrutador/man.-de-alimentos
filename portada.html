@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Manipulación Segura de Alimentos | Argentina</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:system-ui,-apple-system,sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;color:#333}
+        .container{max-width:1200px;margin:0 auto;padding:2rem}
+        header{text-align:center;color:#fff;padding:3rem 1rem}
+        header h1{font-size:2.5rem;margin-bottom:1rem;text-shadow:0 2px 4px rgba(0,0,0,.2)}
+        header p{font-size:1.2rem;opacity:.9}
+        .modules-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;padding:1rem}
+        .module-card{background:#fff;border-radius:1rem;padding:2rem;box-shadow:0 10px 40px rgba(0,0,0,.2);transition:transform .3s,box-shadow .3s;cursor:pointer;text-decoration:none;color:inherit;display:block}
+        .module-card:hover{transform:translateY(-5px);box-shadow:0 20px 60px rgba(0,0,0,.3)}
+        .module-number{display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;border-radius:50%;font-size:1.5rem;font-weight:700;margin-bottom:1rem}
+        .module-title{font-size:1.3rem;color:#1e293b;margin-bottom:.5rem}
+        .module-desc{color:#64748b;font-size:.95rem;line-height:1.5}
+        .module-icon{font-size:2.5rem;margin-bottom:1rem}
+        footer{text-align:center;color:#fff;padding:3rem;opacity:.8}
+        .btn-ver{display:inline-block;margin-top:1.5rem;padding:.75rem 1.5rem;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;text-decoration:none;border-radius:2rem;font-weight:500;transition:opacity .2s}
+        .btn-ver:hover{opacity:.9}
+        @media(max-width:600px){header h1{font-size:1.8rem}.module-card{padding:1.5rem}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Curso de Manipulación Segura de Alimentos</h1>
+            <p>7 Módulos Completos • Curso Oficial Argentina 2026</p>
+        </header>
+        
+        <div class="modules-grid">
+            <a href="modulo_01.html" class="module-card">
+                <div class="module-number">1</div>
+                <div class="module-title">Conceptos Generales</div>
+                <div class="module-desc">Tipos de alimentos, Código Alimentario Argentino, cadena agroalimentaria y rol del manipulador.</div>
+            </a>
+            
+            <a href="modulo_02.html" class="module-card">
+                <div class="module-number">2</div>
+                <div class="module-title">Alimentos Seguros</div>
+                <div class="module-desc">Peligros físicos, químicos y biológicos. Microorganismos y factores de crecimiento.</div>
+            </a>
+            
+            <a href="modulo_03.html" class="module-card">
+                <div class="module-number">3</div>
+                <div class="module-title">Cinco Claves de la Inocuidad</div>
+                <div class="module-desc">Salud, higiene personal, limpieza, temperatura y almacenamiento correcto.</div>
+            </a>
+            
+            <a href="modulo_04.html" class="module-card">
+                <div class="module-number">4</div>
+                <div class="module-title">Enfermedades (ETAs)</div>
+                <div class="module-desc">Salmonelosis, Botulismo, Listeriosis, Triquinosis y otras enfermedades transmitidas por alimentos.</div>
+            </a>
+            
+            <a href="modulo_05.html" class="module-card">
+                <div class="module-number">5</div>
+                <div class="module-title">Alimentos Libres de Gluten</div>
+                <div class="module-desc">Enfermedad celíaca, símbolos SIN TACC, elaboración segura sin contaminación cruzada.</div>
+            </a>
+            
+            <a href="modulo_06.html" class="module-card">
+                <div class="module-number">6</div>
+                <div class="module-title">Nutrición</div>
+                <div class="module-desc">Componentes de los alimentos, Guías Alimentarias para la Población Argentina.</div>
+            </a>
+            
+            <a href="modulo_07.html" class="module-card">
+                <div class="module-number">7</div>
+                <div class="module-title">Sistemas de Gestión</div>
+                <div class="module-desc">BPM, HACCP y auditorías de inocuidad alimentaria.</div>
+            </a>
+        </div>
+        
+        <footer>
+            <p>📖 Material de estudio oficial • ANMAT / SENASA</p>
+            <a href="https://github.com/enrrutador/man.-de-alimentos" class="btn-ver" target="_blank">Ver en GitHub ↗</a>
+        </footer>
+    </div>
+</body>
+</html>
