@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 4 - Enfermedades | Curso de Manipulación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Inter',sans-serif;background:#fef2f2;color:#1e293b;line-height:1.7}
+        .container{display:flex;min-height:100vh}
+        .sidebar{width:280px;background:#1e293b;color:#fff;position:fixed;height:100vh;overflow-y:auto;padding:1.5rem;z-index:100}
+        .sidebar h2{font-size:1.1rem;font-weight:700;margin-bottom:.5rem;color:#f87171}
+        .sidebar p{font-size:.8rem;color:#94a3b8;margin-bottom:1.5rem}
+        .nav-list{list-style:none}
+        .nav-list li{margin:.4rem 0}
+        .nav-list a{display:flex;align-items:center;gap:.75rem;padding:.75rem 1rem;border-radius:.5rem;color:#cbd5e1;text-decoration:none;font-size:.9rem;transition:.2s}
+        .nav-list a:hover{background:#334155}
+        .nav-list a.active{background:#ef4444;color:#fff;font-weight:500}
+        .nav-icon{width:1.5rem;text-align:center}
+        .main{margin-left:280px;flex:1;padding:3rem;max-width:900px}
+        .hero{background:linear-gradient(135deg,#ef4444,#dc2626);color:#fff;padding:3rem;border-radius:1rem;margin-bottom:2rem;box-shadow:0 20px 40px rgba(239,68,68,.3)}
+        .hero small{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:2px;opacity:.9;margin-bottom:.5rem}
+        .hero h1{font-size:2.2rem;font-weight:700}
+        .card{background:#fff;padding:2rem;border-radius:1rem;margin-bottom:1.5rem;box-shadow:0 4px 15px rgba(0,0,0,.08);border:1px solid #e2e8f0}
+        .card h2{color:#dc2626;font-size:1.4rem;margin-bottom:1rem;padding-bottom:.75rem;border-bottom:2px solid #e2e8f0}
+        .card h3{color:#b91c1c;font-size:1.1rem;margin:1.2rem 0 .5rem}
+        .card p{margin-bottom:1rem}
+        .card ul{margin-left:1.5rem;margin-bottom:1rem}
+        .card li{margin-bottom:.5rem}
+        .disease-box{background:#fee2e2;border-left:4px solid #ef4444;padding:1.25rem;margin:1rem 0;border-radius:0 .5rem .5rem 0}
+        .disease-box h4{color:#991b1b;margin-bottom:.5rem}
+        .nav-footer{display:flex;justify-content:space-between;margin-top:3rem;padding-top:2rem;border-top:2px solid #e2e8f0}
+        .nav-btn{padding:.75rem 1.5rem;border-radius:.5rem;text-decoration:none;font-weight:500;transition:.2s}
+        .nav-btn.primary{background:#ef4444;color:#fff}
+        .nav-btn.secondary{background:#e2e8f0;color:#475569}
+        @media(max-width:768px){.sidebar{display:none}.main{margin-left:0;padding:1.5rem}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>📚 Manipulación de Alimentos</h2>
+            <p>Curso oficial Argentina 2026</p>
+            <ul class="nav-list">
+                <li><a href="index.html"><span class="nav-icon">🏠</span> Portada</a></li>
+                <li><a href="modulo_01.html"><span class="nav-icon">📘</span> Módulo 1</a></li>
+                <li><a href="modulo_02.html"><span class="nav-icon">🛡️</span> Módulo 2</a></li>
+                <li><a href="modulo_03.html"><span class="nav-icon">🔑</span> Módulo 3</a></li>
+                <li><a href="modulo_04.html" class="active"><span class="nav-icon">🦠</span> Módulo 4</a></li>
+                <li><a href="modulo_05.html"><span class="nav-icon">🌾</span> Módulo 5</a></li>
+                <li><a href="modulo_06.html"><span class="nav-icon">🥗</span> Módulo 6</a></li>
+                <li><a href="modulo_07.html"><span class="nav-icon">📋</span> Módulo 7</a></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="hero">
+                <small>Módulo 4</small>
+                <h1>🦠 Enfermedades Transmitidas por Alimentos (ETAs)</h1>
+            </div>
+            
+            <div class="card">
+                <h2>🤒 Síntomas y Evolución</h2>
+                <p><strong>Período de incubación:</strong> Tiempo entre consumir el alimento y aparecer los síntomas.</p>
+                <ul>
+                    <li>Varía de horas a días según el agente causal</li>
+                    <li>No siempre se relaciona inmediatamente con la última comida</li>
+                </ul>
+                <h3>Síntomas Comunes:</h3>
+                <ul>
+                    <li>Náuseas y vómitos</li>
+                    <li>Diarrea (puede ser con sangre)</li>
+                    <li>Dolor abdominal (cólicos)</li>
+                    <li>Fiebre</li>
+                    <li>Dolor de cabeza</li>
+                    <li>Debilidad</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>🦠 Principales Enfermedades</h2>
+                
+                <div class="disease-box">
+                    <h4>🐔 Salmonelosis</h4>
+                    <p><strong>Causante:</strong> Bacteria Salmonella</p>
+                    <p><strong>Incubación:</strong> 6-72 horas</p>
+                    <p><strong>Alimentos involucrados:</strong> Carnes, huevos, lácteos</p>
+                    <p><strong>Prevención:</strong> Cocción adecuada, refrigeración</p>
+                </div>
+                
+                <div class="disease-box">
+                    <h4>☠️ Botulismo</h4>
+                    <p><strong>Causante:</strong> Toxina de Clostridium botulinum</p>
+                    <p><strong>Incubación:</strong> 12-36 horas</p>
+                    <p><strong>Alimentos:</strong> Conservas caseras mal preparadas, ajo en aceite</p>
+                    <p><strong>Gravedad:</strong> Muy grave, puede causar muerte</p>
+                </div>
+                
+                <div class="disease-box">
+                    <h4>📌 Listeriosis</h4>
+                    <p><strong>Causante:</strong> Listeria monocytogenes</p>
+                    <p><strong>Alto riesgo:</strong> Embarazadas, inmunocompromedidos</p>
+                    <p><strong>Alimentos:</strong> Quesos blandos, fiambres, verduras crudas</p>
+                </div>
+                
+                <div class="disease-box">
+                    <h4>🐖 Triquinosis</h4>
+                    <p><strong>Causante:</strong> Parásito Trichinella</p>
+                    <p><strong>Alimentos:</strong> Carne de cerdo o caza mal cocida</p>
+                    <p><strong>Prevención:</strong> Cocción a más de 80°C interno</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>✅ Medidas de Prevención</h2>
+                <ul>
+                    <li>Lavar bien frutas y verduras</li>
+                    <li>Cocinar carnes, aves y pescados a temperaturas seguras</li>
+                    <li>Refrigerar alimentos perecederos</li>
+                    <li>No consumir alimentos crudos de dudosa procedencia</li>
+                    <li>Mantener separados alimentos crudos y cocidos</li>
+                    <li>Atender casos sospechosos médicamente</li>
+                </ul>
+            </div>
+            
+            <div class="nav-footer">
+                <a href="modulo_03.html" class="nav-btn secondary">← Módulo 3</a>
+                <a href="modulo_05.html" class="nav-btn primary">Módulo 5 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
