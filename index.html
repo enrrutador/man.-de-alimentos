@@ -3,61 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual de Manipulación de Alimentos</title>
-    <link rel="stylesheet" href="assets/css/design-tokens.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/modules.css">
+    <title>Curso de Manipulación de Alimentos - 7 Módulos</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .subtitle { font-size: 1.2rem; opacity: 0.9; }
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .module-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .module-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .module-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .module-title {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .module-desc {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .module-content {
+            display: none;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .module-content.active {
+            display: block;
+        }
+        .btn-ver {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            transition: opacity 0.3s;
+        }
+        .btn-ver:hover { opacity: 0.9; }
+        footer {
+            text-align: center;
+            color: white;
+            padding: 40px;
+            opacity: 0.8;
+        }
+    </style>
 </head>
 <body>
-    <header class="main-header">
-        <div class="container">
-            <h1>Manual de Manipulación de Alimentos</h1>
-            <p>Curso de Certificación Profesional</p>
+    <div class="container">
+        <header>
+            <h1>📚 Curso de Manipulación Segura de Alimentos</h1>
+            <p class="subtitle">7 Módulos Completos • Argentina 2026</p>
+        </header>
+
+        <div class="modules-grid">
+            <!-- MÓDULO 1 -->
+            <div class="module-card" onclick="toggleModule(1)">
+                <div class="module-number">1</div>
+                <h2 class="module-title">Conceptos Generales</h2>
+                <p class="module-desc">Tipos de alimentos, Código Alimentario Argentino, cadena agroalimentaria, seguridad alimentaria y el rol del manipulador.</p>
+                <a href="modulo_01.md" class="btn-ver" onclick="event.stopPropagation()">📄 Ver contenido</a>
+            </div>
+
+            <!-- MÓDULO 2 -->
+            <div class="module-card" onclick="toggleModule(2)">
+                <div class="module-number">2</div>
+                <h2 class="module-title">Alimentos Seguros</h2>
+                <p class="module-desc">Peligros físicos, químicos y biológicos. Microorganismos y factores de desarrollo. Alimentos de alto y bajo riesgo.</p>
+                <a href="modulo_02.md" class="btn-ver" onclick="event.stopPropagation()">📄 Ver contenido</a>
+            </div>
+
+            <!-- MÓDULO 3 -->
+            <div class="module-card" onclick="toggleModule(3)">
+                <div class="module-number">3</div>
+                <h2 class="module-title">Cinco Claves de la Inocuidad</h2>
+                <p class="module-desc">Higiene personal, almacenamiento, limpieza y desinfección, fumigación, control de plagas, conservación y transporte.</p>
+                <a href="modulo_03.md" class="btn-ver" onclick="event.stopPropagation()">📄 Ver contenido</a>
+            </div>
+
+            <!-- MÓDULO 4 -->
+            <div class="module-card" onclick="toggleModule(4)">
+                <div class="module-number">4</div>
+                <h2 class="module-title">Enfermedades Transmitidas</h2>
+                <p class="module-desc">ETAs: Salmonelosis, Botulismo, Listeriosis, Triquinosis, Cólera y factores de aparición.</p>
+                <a href="modulo_04.md" class="btn-ver" onclick="event.stopPropagation()">📄 Ver contenido</a>
+            </div>
+
+            <!-- MÓDULO 5 -->
+            <div class="module-card" onclick="toggleModule(5)">
+                <div class="module-number">5</div>
+                <h2 class="module-title">Alimentos Libres de Gluten</h2>
+                <p class="module-desc">Celiaquía, identificación, excepciones, elaboración segura y prevención de contaminación cruzada.</p>
+                <a href="modulo_05.md" class="btn-ver" onclick="event.stopPropagation()">📄 Ver contenido</a>
+            </div>
+
+            <!-- MÓDULO 6 -->
+            <div class="module-card" onclick="toggleModule(6)">
+                <div class="module-number">6</div>
+                <h2 class="module-title">Nutrición</h2>
+                <p class="module-desc">Componentes de los alimentos, grasas, Guías Alimentarias Argentina, sellos octogonales y gráfica de alimentación diaria.</p>
+                <a href="modulo_06.md" class="btn-ver" onclick="event.stopPropagation()">📄 Ver contenido</a>
+            </div>
+
+            <!-- MÓDULO 7 -->
+            <div class="module-card" onclick="toggleModule(7)">
+                <div class="module-number">7</div>
+                <h2 class="module-title">Sistemas de Gestión</h2>
+                <p class="module-desc">Requisitos de establecimientos, BPM, sistema HACCP, principios, peligros, puntos críticos y auditorías.</p>
+                <a href="modulo_07.md" class="btn-ver" onclick="event.stopPropagation()">📄 Ver contenido</a>
+            </div>
         </div>
-    </header>
 
-    <main class="main-content">
-        <div class="container">
-            <section class="course-intro">
-                <h2>Bienvenido al Curso</h2>
-                <p>Aprende las mejores prácticas para la manipulación segura de alimentos y obtén tu certificación oficial.</p>
-                <div class="course-meta">
-                    <span class="badge">8 horas</span>
-                    <span class="badge">Nivel: Básico a Intermedio</span>
-                    <span class="badge badge-success">Con Certificación</span>
-                </div>
-            </section>
+        <footer>
+            <p>📖 Material de estudio • Basado en el Código Alimentario Argentino</p>
+            <p>ANMAT / SENASA</p>
+        </footer>
+    </div>
 
-            <section class="modules-section">
-                <h2>Módulos del Curso</h2>
-                <div id="modules-container" class="modules-grid">
-                    <!-- Módulos se cargan dinámicamente -->
-                </div>
-            </section>
-
-            <section class="quiz-section">
-                <h2>Evaluación de Conocimientos</h2>
-                <div id="quiz-container">
-                    <!-- Quiz interactivo -->
-                </div>
-            </section>
-
-            <section class="progress-section">
-                <h2>Tu Progreso</h2>
-                <div class="progress-bar-container">
-                    <div id="progress-bar" class="progress-bar"></div>
-                </div>
-                <p id="progress-text">0% completado</p>
-            </section>
-        </div>
-    </main>
-
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2026 Manual de Manipulación de Alimentos - Todos los derechos reservados</p>
-        </div>
-    </footer>
-
-    <script src="assets/js/navigation.js"></script>
+    <script>
+        function toggleModule(n) {
+            // En móvil: expandir contenido o navegar
+            const card = event.currentTarget;
+            card.style.transform = 'scale(0.98)';
+            setTimeout(() => {
+                card.style.transform = '';
+            }, 150);
+        }
+    </script>
 </body>
 </html>
