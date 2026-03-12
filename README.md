@@ -1,46 +1,26 @@
-# Manual de Manipulación de Alimentos
+# Curso Virtual de Manipulación Segura de Alimentos
 
-Plataforma de curso profesional para la certificación en manipulación de alimentos.
+Material de estudio del curso oficial de manipulación de alimentos.
 
-## 📚 Descripción
+## Estructura del Curso
 
-Este curso proporciona las mejores prácticas para la manipulación segura de alimentos según normativas vigentes.
+| Módulo | Contenido | Archivo |
+|--------|-----------|---------|
+| 1 | Conceptos Generales de Manipulación de Alimentos | [modulo_01.md](modulo_01.md) |
+| 2 | Alimentos Seguros | [modulo_02.md](modulo_02.md) |
+| 3 | Cinco Claves de la Inocuidad Alimentaria | [modulo_03.md](modulo_03.md) |
+| 4 | Enfermedades Transmitidas por Alimentos (ETAs) | [modulo_04.md](modulo_04.md) |
+| 5 | Alimentos Libres de Gluten | [modulo_05.md](modulo_05.md) |
+| 6 | Nutrición | [modulo_06.md](modulo_06.md) |
+| 7 | Sistemas de Gestión de Inocuidad de Alimentos | [modulo_07.md](modulo_07.md) |
 
-## 🎯 Características
+## Normativa de Referencia
 
-- **5 Módulos** completos de aprendizaje
-- **Evaluaciones** con seguimiento de progreso
-- **Certificación** al finalizar
-- **Responsive** - funciona en móvil y desktop
+- Código Alimentario Argentino (CAA)
+- ANMAT - Administración Nacional de Medicamentos, Alimentos y Tecnología Médica
+- SENASA - Servicio Nacional de Sanidad y Calidad Agroalimentaria
+- Ley N° 27.642 - Promoción de la alimentación saludable
 
-## 📁 Estructura
+## Licencia
 
-```
-├── index.html              # Página principal
-├── assets/
-│   ├── css/               # Estilos del curso
-│   │   ├── design-tokens.css
-│   │   ├── components.css
-│   │   └── modules.css
-│   └── js/                # JavaScript
-│       └── navigation.js
-├── data/
-│   └── contenido.json     # Contenido del curso
-└── README.md
-```
-
-## 🚀 Demo
-
-[Ver curso en línea](https://enrrutador.github.io/man.-de-alimentos/)
-
-## 📝 Módulos
-
-1. **Fundamentos** - Conceptos básicos y marco normativo
-2. **Nutrición** - Composición y propiedades de alimentos
-3. **Higiene** - Prácticas de higiene personal e instalaciones
-4. **Conservación** - Métodos de conservación y control
-5. **Etiquetado** - Información al consumidor
-
-## 📄 Licencia
-
-Este material es propiedad del autor. Todos los derechos reservados.
+Material educativo para uso personal de estudio.
