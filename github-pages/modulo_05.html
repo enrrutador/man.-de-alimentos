@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 5 - Libre Gluten | Curso de Manipulación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Inter',sans-serif;background:#f0fdf4;color:#1e293b;line-height:1.7}
+        .container{display:flex;min-height:100vh}
+        .sidebar{width:280px;background:#1e293b;color:#fff;position:fixed;height:100vh;overflow-y:auto;padding:1.5rem;z-index:100}
+        .sidebar h2{font-size:1.1rem;font-weight:700;margin-bottom:.5rem;color:#4ade80}
+        .sidebar p{font-size:.8rem;color:#94a3b8;margin-bottom:1.5rem}
+        .nav-list{list-style:none}
+        .nav-list li{margin:.4rem 0}
+        .nav-list a{display:flex;align-items:center;gap:.75rem;padding:.75rem 1rem;border-radius:.5rem;color:#cbd5e1;text-decoration:none;font-size:.9rem;transition:.2s}
+        .nav-list a:hover{background:#334155}
+        .nav-list a.active{background:#22c55e;color:#fff;font-weight:500}
+        .nav-icon{width:1.5rem;text-align:center}
+        .main{margin-left:280px;flex:1;padding:3rem;max-width:900px}
+        .hero{background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;padding:3rem;border-radius:1rem;margin-bottom:2rem;box-shadow:0 20px 40px rgba(34,197,94,.3)}
+        .hero small{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:2px;opacity:.9;margin-bottom:.5rem}
+        .hero h1{font-size:2.2rem;font-weight:700}
+        .card{background:#fff;padding:2rem;border-radius:1rem;margin-bottom:1.5rem;box-shadow:0 4px 15px rgba(0,0,0,.08);border:1px solid #e2e8f0}
+        .card h2{color:#16a34a;font-size:1.4rem;margin-bottom:1rem;padding-bottom:.75rem;border-bottom:2px solid #e2e8f0}
+        .card h3{color:#15803d;font-size:1.1rem;margin:1.2rem 0 .5rem}
+        .card p{margin-bottom:1rem}
+        .card ul{margin-left:1.5rem;margin-bottom:1rem}
+        .card li{margin-bottom:.5rem}
+        .alert-box{background:#dcfce7;border-left:4px solid #22c55e;padding:1.25rem;margin:1rem 0;border-radius:0 .5rem .5rem 0}
+        .alert-box h4{color:#166534;margin-bottom:.5rem}
+        .nav-footer{display:flex;justify-content:space-between;margin-top:3rem;padding-top:2rem;border-top:2px solid #e2e8f0}
+        .nav-btn{padding:.75rem 1.5rem;border-radius:.5rem;text-decoration:none;font-weight:500;transition:.2s}
+        .nav-btn.primary{background:#22c55e;color:#fff}
+        .nav-btn.secondary{background:#e2e8f0;color:#475569}
+        @media(max-width:768px){.sidebar{display:none}.main{margin-left:0;padding:1.5rem}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>📚 Manipulación de Alimentos</h2>
+            <p>Curso oficial Argentina 2026</p>
+            <ul class="nav-list">
+                <li><a href="index.html"><span class="nav-icon">🏠</span> Portada</a></li>
+                <li><a href="modulo_01.html"><span class="nav-icon">📘</span> Módulo 1</a></li>
+                <li><a href="modulo_02.html"><span class="nav-icon">🛡️</span> Módulo 2</a></li>
+                <li><a href="modulo_03.html"><span class="nav-icon">🔑</span> Módulo 3</a></li>
+                <li><a href="modulo_04.html"><span class="nav-icon">🦠</span> Módulo 4</a></li>
+                <li><a href="modulo_05.html" class="active"><span class="nav-icon">🌾</span> Módulo 5</a></li>
+                <li><a href="modulo_06.html"><span class="nav-icon">🥗</span> Módulo 6</a></li>
+                <li><a href="modulo_07.html"><span class="nav-icon">📋</span> Módulo 7</a></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="hero">
+                <small>Módulo 5</small>
+                <h1>🌾 Alimentos Libres de Gluten</h1>
+            </div>
+            
+            <div class="card">
+                <h2>🩺 Enfermedad Celíaca</h2>
+                <p><strong>Es una enfermedad autoinmune permanente</strong> que afecta el intestino delgado cuando se consume gluten.</p>
+                
+                <h3>¿Qué es el Gluten?</h3>
+                <p>Es una proteína presente en:</p>
+                <ul>
+                    <li><strong>T</strong>rigo</li>
+                    <li><strong>A</strong>vena</li>
+                    <li><strong>C</strong>ebada</li>
+                    <li><strong>C</strong>enteno</li>
+                </ul>
+                <p>(Mnemotécnica: <strong>TACC</strong>)</p>
+                
+                <h3>¿Qué sucede en el organismo?</h3>
+                <ul>
+                    <li>El sistema inmune ataca las vellosidades del intestino</li>
+                    <li>Disminuye la absorción de nutrientes</li>
+                    <li><strong>NO hay cura</strong>, solo tratamiento: dieta LIBRE DE GLUTEN de por vida</li>
+                </ul>
+                
+                <h3>Síntomas:</h3>
+                <ul>
+                    <li>Diarrea crónica</li>
+                    <li>Distensión abdominal</li>
+                    <li>Dolor abdominal</li>
+                    <li>Pérdida de peso</li>
+                    <li>Anemia</li>
+                    <li>Retraso en el crecimiento (niños)</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>✅ Identificación de Alimentos Sin TACC</h2>
+                
+                <div class="alert-box">
+                    <h4>🌾 Símbolo Oficial</h4>
+                    <p>Espiga de trigo tachada + leyenda <strong>"SIN TACC"</strong></p>
+                </div>
+                
+                <h3>Marcas válidas:</h3>
+                <ul>
+                    <li>✓ Sin TACC</li>
+                    <li>✓ Libre de Gluten</li>
+                    <li>✓ Gluten Free</li>
+                    <li>✓ Sin Gluten</li>
+                    <li>✓ Apto para celíacos</li>
+                </ul>
+                
+                <h3>Verificación:</h3>
+                <p>Consultar el <strong>Listado de ANMAT</strong> de productos aptos para celíacos</p>
+            </div>
+            
+            <div class="card">
+                <h2>🏭 Prevención de Contaminación Cruzada</h2>
+                <h3>Sector Exclusivo</h3>
+                <ul>
+                    <li>Área físicamente separada</li>
+                    <li>Limpieza y desinfección previa diaria</li>
+                    <li>Preferentemente elaborar al inicio del día (antes que los productos con gluten)</li>
+                    <li>No elaborar simultáneamente productos con y sin gluten</li>
+                </ul>
+                
+                <h3>Almacenamiento</h3>
+                <ul>
+                    <li>Estante superior (evita goteo)</li>
+                    <li>Envases herméticos</li>
+                    <li>Etiquetado claro: "LIBRE DE GLUTEN"</li>
+                </ul>
+                
+                <h3>Saneamiento (Limpieza)</h3>
+                <ul>
+                    <li>Limpieza profunda antes de elaborar sin gluten</li>
+                    <li>Diferentes utensilios o desinfección rigurosa</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>📋 Excepciones (Restaurantes, Bares)</h2>
+                <p>Establecimientos que no pueden garantizar sector exclusivo deben:</p>
+                <ul>
+                    <li>Informar al consumidor sobre dudas de contaminación</li>
+                    <li>No autorizar productos para celíacos</li>
+                    <li>Trabajar con productos de proveedores certificados</li>
+                </ul>
+            </div>
+            
+            <div class="
