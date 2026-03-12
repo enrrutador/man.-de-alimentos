@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2 - Alimentos Seguros | Curso de Manipulación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Inter',sans-serif;background:#f0fdf4;color:#1e293b;line-height:1.7}
+        .container{display:flex;min-height:100vh}
+        .sidebar{width:280px;background:#1e293b;color:#fff;position:fixed;height:100vh;overflow-y:auto;padding:1.5rem;z-index:100}
+        .sidebar h2{font-size:1.1rem;font-weight:700;margin-bottom:.5rem;color:#34d399}
+        .sidebar p{font-size:.8rem;color:#94a3b8;margin-bottom:1.5rem}
+        .nav-list{list-style:none}
+        .nav-list li{margin:.4rem 0}
+        .nav-list a{display:flex;align-items:center;gap:.75rem;padding:.75rem 1rem;border-radius:.5rem;color:#cbd5e1;text-decoration:none;font-size:.9rem;transition:.2s}
+        .nav-list a:hover{background:#334155}
+        .nav-list a.active{background:#10b981;color:#fff;font-weight:500}
+        .nav-icon{width:1.5rem;text-align:center}
+        .main{margin-left:280px;flex:1;padding:3rem;max-width:900px}
+        .hero{background:linear-gradient(135deg,#10b981,#059669);color:#fff;padding:3rem;border-radius:1rem;margin-bottom:2rem;box-shadow:0 20px 40px rgba(16,185,129,.3)}
+        .hero small{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:2px;opacity:.9;margin-bottom:.5rem}
+        .hero h1{font-size:2.2rem;font-weight:700}
+        .card{background:#fff;padding:2rem;border-radius:1rem;margin-bottom:1.5rem;box-shadow:0 4px 15px rgba(0,0,0,.08);border:1px solid #e2e8f0}
+        .card h2{color:#059669;font-size:1.4rem;margin-bottom:1rem;padding-bottom:.75rem;border-bottom:2px solid #e2e8f0}
+        .card h3{color:#047857;font-size:1.1rem;margin:1.2rem 0 .5rem}
+        .card p{margin-bottom:1rem}
+        .card ul{margin-left:1.5rem;margin-bottom:1rem}
+        .card li{margin-bottom:.5rem}
+        .highlight{background:#d1fae5;border-left:4px solid #10b981;padding:1.25rem;margin:1rem 0;border-radius:0 .5rem .5rem 0}
+        .nav-footer{display:flex;justify-content:space-between;margin-top:3rem;padding-top:2rem;border-top:2px solid #e2e8f0}
+        .nav-btn{padding:.75rem 1.5rem;border-radius:.5rem;text-decoration:none;font-weight:500;transition:.2s}
+        .nav-btn.primary{background:#10b981;color:#fff}
+        .nav-btn.secondary{background:#e2e8f0;color:#475569}
+        .nav-btn:hover{opacity:.9;transform:translateY(-2px)}
+        @media(max-width:768px){.sidebar{display:none}.main{margin-left:0;padding:1.5rem}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>📚 Manipulación de Alimentos</h2>
+            <p>Curso oficial Argentina 2026</p>
+            <ul class="nav-list">
+                <li><a href="index.html"><span class="nav-icon">🏠</span> Portada</a></li>
+                <li><a href="modulo_01.html"><span class="nav-icon">📘</span> Módulo 1</a></li>
+                <li><a href="modulo_02.html" class="active"><span class="nav-icon">🛡️</span> Módulo 2</a></li>
+                <li><a href="modulo_03.html"><span class="nav-icon">🔑</span> Módulo 3</a></li>
+                <li><a href="modulo_04.html"><span class="nav-icon">🦠</span> Módulo 4</a></li>
+                <li><a href="modulo_05.html"><span class="nav-icon">🌾</span> Módulo 5</a></li>
+                <li><a href="modulo_06.html"><span class="nav-icon">🥗</span> Módulo 6</a></li>
+                <li><a href="modulo_07.html"><span class="nav-icon">📋</span> Módulo 7</a></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="hero">
+                <small>Módulo 2</small>
+                <h1>🛡️ Alimentos Seguros</h1>
+            </div>
+            
+            <div class="card">
+                <h2>🔬 Peligros en los Alimentos</h2>
+                <h3>Peligros Físicos</h3>
+                <p>Materiales extraños que pueden causar lesiones o daños físicos:</p>
+                <ul>
+                    <li>Vidrio de envases rotos</li>
+                    <li>Partículas metálicas de equipos</li>
+                    <li>Pelo, uñas o ropa del manipulador</li>
+                    <li>Insectos o partes de roedores</li>
+                </ul>
+                
+                <h3>Peligros Químicos</h3>
+                <p>Sustancias tóxicas o contaminantes químicos:</p>
+                <ul>
+                    <li>Productos de limpieza y desinfección mal enjuagados</li>
+                    <li>Residuos de pesticidas en frutas y verduras</li>
+                    <li>Lubricantes de maquinaria</li>
+                    <li>Metales pesados (plomo, mercurio)</li>
+                </ul>
+                
+                <h3>Peligros Biológicos</h3>
+                <p>Microorganismos patógenos que causan enfermedades:</p>
+                <ul>
+                    <li><strong>Bacterias:</strong> Salmonella, E. coli, Listeria, Clostridium</li>
+                    <li><strong>Virus:</strong> Norovirus, Hepatitis A</li>
+                    <li><strong>Parásitos:</strong> Anisakis, Trichinella, Toxoplasma</li>
+                    <li><strong>Hongos:</strong> Mohos y sus micotoxinas</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>🧫 Microorganismos y Su Crecimiento</h2>
+                <p>Los microorganismos necesitan ciertas condiciones para multiplicarse:</p>
+                
+                <div class="highlight">
+                    <strong>Factores que favorecen el crecimiento microbiano:</strong>
+                    <ul>
+                        <li><strong>Agua:</strong> Disponibilidad de humedad</li>
+                        <li><strong>Nutrientes:</strong> Proteínas, carbohidratos, grasas</li>
+                        <li><strong>Temperatura:</strong> Zona de peligro: 5°C - 60°C</li>
+                        <li><strong>Tiempo:</strong> En 4 horas a temperatura ambiente las bacterias se multiplican peligrosamente</li>
+                        <li><strong>pH:</strong> Acidez o alcalinidad del alimento</li>
+                        <li><strong>Oxígeno:</strong> Algunos necesitan aire, otros no</li>
+                    </ul>
+                </div>
+                
+                <h3>La Zona de Peligro</h3>
+                <p>La temperatura entre <strong>5°C y 60°C</strong> es la zona de peligro donde las bacterias crecen rápidamente.</p>
+                <ul>
+                    <li>🔴 <strong>Evitar:</strong> Dejar alimentos a temperatura ambiente más de 2 horas</li>
+                    <li>🟢 <strong>Ideal:</strong> Mantener calientes a más de 60°C o fríos a menos de 5°C</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>⚠️ Alimentos de Alto Riesgo</h2>
+                <p>Requieren mayor cuidado por sus características:</p>
+                <ul>
+                    <li>Carnes crudas y cocidas</li>
+                    <li>Aves y huevos</li>
+                    <li>Lácteos y derivados</li>
+                    <li>Pescados y mariscos</li>
+                    <li>Productos listos para consumir</li>
+                    <li>Alimentos preparados con huevo crudo</li>
+                </ul>
+                <div class="highlight">
+                    <strong>Para estos alimentos:</strong> Siempre mantener en cadena de frío y calentar a más de 70°C en el centro.
+                </div>
+            </div>
+            
+            <div class="nav-footer">
+                <a href="modulo_01.html
