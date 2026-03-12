@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 1 - Conceptos Generales | Curso de Manipulación de Alimentos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #1e293b; line-height: 1.7; }
+        
+        /* Layout */
+        .container { display: flex; min-height: 100vh; }
+        
+        /* Sidebar */
+        .sidebar {
+            width: 280px;
+            background: #1e293b;
+            color: #fff;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 1.5rem;
+            z-index: 100;
+        }
+        .sidebar h2 { font-family: 'Poppins', sans-serif; font-size: 1.1rem; margin-bottom: 1.5rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; }
+        .sidebar-nav { list-style: none; }
+        .sidebar-nav li { margin-bottom: 0.5rem; }
+        .sidebar-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
+            color: #cbd5e1;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.2s;
+        }
+        .sidebar-nav a:hover, .sidebar-nav a.active { background: #3b82f6; color: #fff; }
+        .sidebar-nav a.active { font-weight: 600; }
+        .sidebar-nav .icon { width: 24px; text-align: center; }
+        
+        /* Main Content */
+        .main-content { margin-left: 280px; flex: 1; }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+            color: #fff;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+        .header-content { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
+        .header-icon { font-size: 4rem; margin-bottom: 1rem; }
+        .header h1 { font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .header p { font-size: 1.2rem; opacity: 0.95; }
+        
+        /* Content */
+        .content { padding: 2rem; max-width: 1000px; margin: 0 auto; }
+        
+        /* Cards */
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            border: 1px solid #e2e8f0;
+        }
+        .card h2 { font-family: 'Poppins', sans-serif; color: #3b82f6; font-size: 1.5rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem; }
+        .card h3 { color: #1e293b; font-size: 1.2rem; margin: 1.5rem 0 0.75rem; font-weight: 600; }
+        
+        /* Definition Box */
+        .definition-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-left: 4px solid #3b82f6;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1rem 0;
+        }
+        .definition-box h4 { color: #1e40af; font-size: 1.1rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+        .definition-box p { color: #1e3a8a; margin: 0; }
+        
+        /* Lists */
+        ul, ol { padding-left: 1.5rem; margin: 1rem 0; }
+        li { margin-bottom: 0.5rem; }
+        
+        /* Highlight Box */
+        .highlight-box {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        .highlight-box h4 { color: #92400e; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+        
+        /* Info Grid */
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 1rem 0; }
+        .info-item { background: #f1f5f9; padding: 1rem; border-radius: 10px; }
+        .info-item h4 { color: #3b82f6; font-size: 0.95rem; margin-bottom: 0.5rem; }
+        
+        /* Navigation Buttons */
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #fff;
+            border-top: 1px solid #e2e8f0;
+        }
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .nav-btn-prev { background: #f1f5f9; color: #64748b; }
+        .nav-btn-home { background: #3b82f6; color: #fff; }
+        .nav-btn-next { background: #3b82f6; color: #fff; }
+        .nav-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .sidebar { display: none; }
+            .main-content { margin-left: 0; }
+            .header h1 { font-size: 1.75rem; }
+            .nav-buttons { flex-direction: column; }
+        }
+        
+        /* Table of Contents */
+        .toc { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+        .toc h3 { font-size: 1.1rem; margin-bottom: 1rem; color: #3b82f6; }
+        .toc ul { list-style: none; padding: 0; }
+        .toc li { margin-bottom: 0.5rem; }
+        .toc a { color: #475569; text-decoration: none; }
+        .toc a:hover { color: #3b82f6; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2><i class="fas fa-graduation-cap"></i> Módulos del Curso</h2>
+            <ul class="sidebar-nav">
+                <li><a href="index.html"><span class="icon"><i class="fas fa-home"></i></span> Inicio</a></li>
+                <li><a href="modulo_01.html" class="active"><span class="icon">📚</span> Módulo 1: Conceptos Generales</a></li>
+                <li><a href="modulo_02.html"><span class="icon">🛡️</span> Módulo 2: Alimentos Seguros</a></li>
+                <li><a href="modulo_03.html"><span class="icon">🔑</span> Módulo 3: 5 Claves</a></li>
+                <li><a href="modulo_04.html"><span class="icon">⚠️</span> Módulo 4: Enfermedades</a></li>
+                <li><a href="modulo_05.html"><span class="icon">🌾</span> Módulo 5: Libre Gluten</a></li>
+                <li><a href="modulo_06.html"><span class="icon">🥗</span> Módulo 6: Nutrición</a></li>
+                <li><a href="modulo_07.html"><span class="icon">⚙️</span> Módulo 7: Gestión</a></li>
+            </ul>
+        </aside>
