@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2 - Alimentos Seguros | Curso de Manipulación</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;color:#333;background:#f5f5f5}
+        .container{display:flex;min-height:100vh}
+        .sidebar{width:260px;background:#1e293b;color:#fff;padding:1.5rem;position:fixed;height:100vh;overflow-y:auto}
+        .sidebar h1{font-size:1rem;margin-bottom:.5rem;color:#60a5fa}
+        .sidebar p{font-size:.8rem;color:#94a3b8;margin-bottom:1.5rem}
+        .nav-label{font-size:.65rem;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin:1rem 0 .5rem}
+        .nav-list{list-style:none}
+        .nav-list li{margin:.3rem 0}
+        .nav-list a{display:block;padding:.6rem .8rem;border-radius:.4rem;color:#cbd5e1;text-decoration:none;font-size:.85rem;transition:.2s}
+        .nav-list a:hover{background:#334155}
+        .nav-list a.active{background:#3b82f6;color:#fff}
+        .nav-list .icon{display:inline-block;width:1.5rem}
+        .main{margin-left:260px;flex:1;padding:2rem;max-width:800px}
+        .hero{background:linear-gradient(135deg,#10b981,#3b82f6);color:#fff;padding:2rem;border-radius:1rem;margin-bottom:1.5rem}
+        .hero small{display:block;opacity:.8;text-transform:uppercase;letter-spacing:1px;margin-bottom:.5rem}
+        .hero h1{font-size:1.8rem}
+        .card{background:#fff;padding:1.5rem;border-radius:.8rem;margin-bottom:1rem;box-shadow:0 2px 4px rgba(0,0,0,.05)}
+        .card h2{color:#3b82f6;font-size:1.3rem;margin-bottom:1rem}
+        .card h3{font-size:1.1rem;margin:1rem 0 .5rem;color:#059669}
+        .card p{margin-bottom:1rem}
+        .card ul{margin-left:1.5rem;margin-bottom:1rem}
+        .card li{margin-bottom:.5rem}
+        .highlight{background:#d1fae5;border-left:4px solid #059669;padding:1rem;margin:1rem 0;border-radius:0 .5rem .5rem 0}
+        .highlight.tip{background:#dbeafe;border-left-color:#3b82f6}
+        .nav-footer{display:flex;justify-content:space-between;margin-top:2rem;padding-top:1rem;border-top:1px solid #ddd}
+        .nav-footer a{padding:.6rem 1.2rem;background:#3b82f6;color:#fff;text-decoration:none;border-radius:.4rem}
+        @media(max-width:700px){.sidebar{display:none}.main{margin-left:0}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>📚 Manipulación de Alimentos</h1>
+            <p>Curso oficial Argentina</p>
+            <div class="nav-label">Módulos</div>
+            <ul class="nav-list">
+                <li><a href="modulo_01.html"><span class="icon">📘</span> 1. Conceptos</a></li>
+                <li><a href="modulo_02.html" class="active"><span class="icon">🛡️</span> 2. Alimentos Seguros</a></li>
+                <li><a href="modulo_03.html"><span class="icon">🔑</span> 3. Cinco Claves</a></li>
+                <li><a href="modulo_04.html"><span class="icon">🦠</span> 4. Enfermedades</a></li>
+                <li><a href="modulo_05.html"><span class="icon">🌾</span> 5. Libre Gluten</a></li>
+                <li><a href="modulo_06.html"><span class="icon">🥗</span> 6. Nutrición</a></li>
+                <li><a href="modulo_07.html"><span class="icon">📋</span> 7. Gestión</a></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="hero">
+                <small>Módulo 2</small>
+                <h1>Alimentos Seguros</h1>
+            </div>
+            
+            <div class="card">
+                <h2>🛡️ Concepto de Inocuidad</h2>
+                <p>Un alimento debe ser <strong>inocuo</strong>: estar libre de:</p>
+                <ul>
+                    <li>Bacterias dañinas</li>
+                    <li>Virus patógenos</li>
+                    <li>Parásitos</li>
+                    <li>Sustancias químicas peligrosas</li>
+                    <li>Contaminantes físicos</li>
+                </ul>
+                <div class="highlight">
+                    <strong>Definición CAA:</strong> Todo alimento debe garantizar que no transmita enfermedades al ser consumido.
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>⚠️ Peligros y Riesgos</h2>
+                <h3>🔴 Peligro</h3>
+                <p>Agente biológico, químico o físico capaz de causar daño a la salud.</p>
+                
+                <h3>🔴 Riesgo</h3>
+                <p>Probabilidad y gravedad del efecto nocivo que puede producir un peligro.</p>
+            </div>
+            
+            <div class="card">
+                <h2>🦠 Clasificación de Peligros</h2>
+                
+                <h3>⚙️ Físicos</h3>
+                <ul>
+                    <li>Vidrios rotos</li>
+                    <li>Metales (tornillos, clavos)</li>
+                    <li>Pelo, uñas</li>
+                    <li>Plásticos</li>
+                    <li>Objetos personales extraviados</li>
+                </ul>
+                
+                <h3>🧪 Químicos</h3>
+                <ul>
+                    <li>Productos de limpieza</li>
+                    <li>Desinfectantes</li>
+                    <li>Insecticidas</li>
+                    <li>Residuos de plaguicidas</li>
+                    <li>Lubricantes de maquinaria</li>
+                </ul>
+                
+                <h3>🦠 Biológicos</h3>
+                <ul>
+                    <li><strong>Bacterias:</strong> Las más frecuentes y peligrosas</li>
+                    <li><strong>Virus:</strong> Hepatitis A, Norovirus</li>
+                    <li><strong>Parásitos:</strong> Tenia, Trichinella</li>
+                    <li><strong>Hongos:</strong> Mohos y sus toxinas</li>
+                </ul>
+                <div class="highlight tip">
+                    <strong>💡 Tip:</strong> Las bacterias se duplican cada ~20 minutos en condiciones óptimas.
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>🌡️ Factores de Crecimiento Microbiano</h2>
+                <ul>
+                    <li><strong>Agua (actividad acuosa):</strong> Cuanta más agua disponible, más crecimiento</li>
+                    <li><strong>Temperatura:</strong> Zona peligrosa: 5°C - 65°C</li>
+                    <li><strong>pH:</strong> Mayoría de bacterias: pH 5-8</li>
+                    <li><strong>Oxígeno:</strong> Aerobias necesitan O₂, anaerobias no</li>
+                    <li><strong>Nutrientes:</strong> Proteínas, carbohidratos</li>
+                </ul>
+                <div class="highlight">
+                    <strong>⚡ Rápidamente multiplican:</strong> De 1 bacteria pueden generarse millones en pocas horas si no se controla temperatura.
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>🍖 Alimentos de Alto y Bajo Riesgo</h2>
+                
+                <h3>🔴 Alto Riesgo</h3>
+                <p>Alta humedad + alto contenido proteico + baja acidez</p>
+                <ul>
+                    <li>Carnes (vacuna, aviar, porcina, pescado)</li>
+                    <li>Lácteos (leche, quesos, manteca)</li>
+                    <li>Huevos</li>
+                    <li>Alimentos listos para consumir</li>
+                </ul>
+                <p><strong>Requieren:</strong> Refrigeración o congelación constante</p>
+                
+                <h3>🟢 Bajo Riesgo</h3>
+                <p>Baja humedad o alta acidez</p>
+                <ul>
+                    <li>Galletitas</li>
+                    <li>Fideos secos</li>
+                    <li>Harina</li>
+                    <li>Cereales</li>
+                    <li>Mermeladas</li>
+                    <
