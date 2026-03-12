@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 4 - Enfermedades | Curso de Manipulación</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;color:#333;background:#f5f5f5}
+        .container{display:flex;min-height:100vh}
+        .sidebar{width:260px;background:#1e293b;color:#fff;padding:1.5rem;position:fixed;height:100vh;overflow-y:auto}
+        .sidebar h1{font-size:1rem;margin-bottom:.5rem;color:#60a5fa}
+        .sidebar p{font-size:.8rem;color:#94a3b8;margin-bottom:1.5rem}
+        .nav-list{list-style:none}
+        .nav-list li{margin:.3rem 0}
+        .nav-list a{display:block;padding:.6rem .8rem;border-radius:.4rem;color:#cbd5e1;text-decoration:none;font-size:.85rem;transition:.2s}
+        .nav-list a:hover{background:#334155}
+        .nav-list a.active{background:#7c3aed;color:#fff}
+        .main{margin-left:260px;flex:1;padding:2rem;max-width:800px}
+        .hero{background:linear-gradient(135deg,#7c3aed,#ec4899);color:#fff;padding:2rem;border-radius:1rem;margin-bottom:1.5rem}
+        .hero small{display:block;opacity:.8;text-transform:uppercase;letter-spacing:1px;margin-bottom:.5rem}
+        .hero h1{font-size:1.8rem}
+        .card{background:#fff;padding:1.5rem;border-radius:.8rem;margin-bottom:1rem;box-shadow:0 2px 4px rgba(0,0,0,.05)}
+        .card h2{color:#7c3aed;font-size:1.3rem;margin-bottom:1rem}
+        .card h3{font-size:1.1rem;margin:1rem 0 .5rem;color:#db2777}
+        .card ul{margin-left:1.5rem;margin-bottom:1rem}
+        .card li{margin-bottom:.5rem}
+        .highlight{background:#ede9fe;border-left:4px solid #7c3aed;padding:1rem;margin:1rem 0;border-radius:0 .5rem .5rem 0}
+        .nav-footer{display:flex;justify-content:space-between;margin-top:2rem;padding-top:1rem;border-top:1px solid #ddd}
+        .nav-footer a{padding:.6rem 1.2rem;background:#7c3aed;color:#fff;text-decoration:none;border-radius:.4rem}
+        @media(max-width:700px){.sidebar{display:none}.main{margin-left:0}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>📚 Manipulación de Alimentos</h1>
+            <p>Curso oficial Argentina</p>
+            <ul class="nav-list">
+                <li><a href="modulo_01.html">📘 1. Conceptos</a></li>
+                <li><a href="modulo_02.html">🛡️ 2. Alimentos</a></li>
+                <li><a href="modulo_03.html">🔑 3. Cinco Claves</a></li>
+                <li><a href="modulo_04.html" class="active">🦠 4. Enfermedades</a></li>
+                <li><a href="modulo_05.html">🌾 5. Gluten</a></li>
+                <li><a href="modulo_06.html">🥗 6. Nutrición</a></li>
+                <li><a href="modulo_07.html">📋 7. Gestión</a></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="hero">
+                <small>Módulo 4</small>
+                <h1>Enfermedades Transmitidas por Alimentos (ETAs)</h1>
+            </div>
+            
+            <div class="card">
+                <h2>🤒 Síntomas Generales</h2>
+                <ul>
+                    <li>Náuseas</li>
+                    <li>Vómitos</li>
+                    <li>Diarrea</li>
+                    <li>Dolor abdominal</li>
+                    <li>Fiebre</li>
+                </ul>
+                <p><strong>Incubación:</strong> tiempo entre consumo del alimento y aparición de síntomas (varía según el agente)</p>
+            </div>
+            
+            <div class="card">
+                <h2>🦠 Salmonelosis</h2>
+                <p><strong>Causa:</strong> Bacteria Salmonella</p>
+                <p><strong>Incubación:</strong> 6-72 horas</p>
+                <p><strong>Síntomas:</strong> Diarrea, fiebre, dolor abdominal, náuseas, vómitos</p>
+                <h3>Prevención:</h3>
+                <ul>
+                    <li>Cocción adecuada de carnes y huevos</li>
+                    <li>Separar crudos de cocidos</li>
+                    <li>Higiene de manos</li>
+                    <li>Refrigeración correcta</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>☣️ Botulismo</h2>
+                <p><strong>Causa:</strong> Toxina de Clostridium botulinum</p>
+                <p><strong>Periodo de incubación:</strong> 12-36 horas</p>
+                <p><strong>Síntomas:</strong></p>
+                <ul>
+                    <li>Visión doble o borrosa</li>
+                    <li>Párpados caídos</li>
+                    <li>Dificultad para hablar y tragar</li>
+                    <li>Parálisis progresiva</li>
+                </ul>
+                <div class="highlight">
+                    <strong>⚠️ Alta mortalidad si no se trata</strong><br>
+                    Se asocia a: Conservas caseras mal preparadas, hongos en conserva, ajo en aceite sin tratamiento térmico
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>📌 Listeriosis</h2>
+                <p><strong>Causa:</strong> Listeria monocytogenes</p>
+                <p><strong>Alto riesgo:</strong> Embarazadas, inmunocomprometidos</p>
+                <p><strong>Alimentos asociados:</strong></p>
+                <ul>
+                    <li>Quesos blandos no pasteurizados</li>
+                    <li>Fiambres</li>
+                    <li>Verduras crudas</li>
+                    <li>Patés</li>
+                </ul>
+                <p><strong>Puede causar:</strong> Meningitis, aborto, muerte fetal</p>
+            </div>
+            
+            <div class="card">
+                <h2>🐛 Triquinosis</h2>
+                <p><strong>Causa:</strong> Parásito Trichinella</p>
+                <p><strong>Alimentos:</strong> Carne de cerdo o caza mal cocida</p>
+                <p><strong>Prevención:</strong></p>
+                <ul>
+                    <li>Cocinar carnes a temperaturas superiores a 80°C</li>
+                    <li>Congelar carnes por períodos prolongados</li>
+                    <li>Trabajar solo con proveedores habilitados</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>🦠 Otras ETAs</h2>
+                <ul>
+                    <li><strong>Virus Hepatitis A:</strong> Contaminación fecal-oral</li>
+                    <li><strong>Staphylococcus aureus:</strong> Toxina preformada, incubación 1-6 horas</li>
+                    <li><strong>Bacillus cereus:</strong> Arroz cocido mal refrigerado</li>
+                </ul>
+            </div>
+            
+            <div class="nav-footer">
+                <a href="modulo_03.html">← Módulo 3</a>
+                <a href="modulo_05.html">Módulo 5 →</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
